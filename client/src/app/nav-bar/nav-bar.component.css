@@ -1,0 +1,46 @@
+.nav{
+	background: #eee;
+  height: 0px;
+  padding-top: 0px;
+}
+
+.nav .buind{
+	width: 50%;
+	display: inline-block;
+	margin: auto;
+}
+.nav .buind h2{
+	text-transform: uppercase;
+    width: fit-content;
+    margin: auto;
+  color: #54a5ab;
+
+}
+
+.nav .content{
+	width: 45%;
+	display: inline-block;
+
+}
+.nav .content ul {
+  margin: auto;
+  width: 100%;
+}
+
+
+.nav .content ul li {
+  margin-right: 14%;
+  display: block;
+  float: left;
+
+}
+.nav .content ul li  a{
+  color: #54a5ab;
+  text-decoration: none;
+
+}
+
+.nav .content ul li  a:hover{
+color: #387e84;
+border-bottom: 1px solid #387e84;
+}

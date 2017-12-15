@@ -1,0 +1,92 @@
+.search-page{
+  background: url("./search_bg.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.search-box{
+  width: 40%;
+  background: #675b5770;
+  margin: auto;
+  height: 150px;
+  border-radius: 5px;
+  padding: 1% 1% 0% 5%;
+}
+
+.row{
+  margin: auto;
+  width: 90%;
+  height: 40px;
+  margin: 10px;
+}
+
+.row input{
+  height: -webkit-fill-available;
+  width: 80%;
+  float: left;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-color: transparent;
+
+}
+.row button{
+  width: 15%;
+  height: -webkit-fill-available;
+  float: left;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-color: transparent;
+  background: #56a5ab;
+  color: white;
+  font-size:110% ;
+}
+.row button:hover{
+  background: #4c8d92;
+}
+.row button:active{
+  background: #3b6f73;
+
+}
+.row select{
+  width: 48%;
+  float: left;
+  height: -webkit-fill-available;
+  outline: none;
+  background: #55a5ab;
+  color: white;
+}
+.row .select1 {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+
+}
+
+.row .select2 {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.xx{
+  position: absolute;
+  margin: auto;
+  bottom: 11px;
+  width: 100%;
+}
+.xx button{
+  display: block;
+  margin: auto;
+  background: transparent;
+  border-color: #54a5ab;
+  color: #1c4f5d;
+  width: 100px;
+  height: 30px;
+  border-radius: 4px
+}
+
+.xx button:hover{
+  background: #54a5ab;
+  border-color: transparent;
+  color: white;
+}
