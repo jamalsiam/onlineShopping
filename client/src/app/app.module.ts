@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
 import { SearchComponent } from './search/search.component';
+import { PestComponent } from './pest/pest.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SearchComponent } from './search/search.component';
     HomeComponent,
     AboutComponent,
     NavBarComponent,
-    SearchComponent
+    SearchComponent,
+    PestComponent
   ],
   imports: [
     BrowserModule,

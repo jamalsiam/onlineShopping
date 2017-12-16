@@ -1,8 +1,9 @@
 .search-page{
-  background: url("./search_bg.jpg");
+  background: url("./img/search_bg.jpg");
   background-size: cover;
   width: 100%;
   height: 100vh;
+  background-position: center bottom;
   display: flex;
 }
 
@@ -41,6 +42,7 @@
   background: #140f0ea1;
   color: white;
   font-size:110% ;
+  border: 1px solid #ffffff24;
 }
 .row button:hover{
   background: #140f0ebf;
@@ -68,13 +70,13 @@
   border-bottom-right-radius: 7px;
 }
 
-.xx{
+.Read-me{
   position: absolute;
   margin: auto;
   bottom: 11px;
   width: 100%;
 }
-.xx button{
+.Read-me button{
   display: block;
   margin: auto;
   background: transparent;
@@ -85,8 +87,8 @@
   border-radius: 4px
 }
 
-.xx button:hover{
-  background: #000000;
+.Read-me button:hover{
+  background: #140f0ec2;
   border-color: transparent;
   color: white;
 }
