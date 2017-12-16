@@ -3,21 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="707d4992-8637-404c-a205-d5b565713534" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/home/home.component.html" afterPath="$PROJECT_DIR$/client/src/app/home/home.component.html" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/search/search.component.css" afterPath="$PROJECT_DIR$/client/src/app/search/search.component.css" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/search/search.component.html" afterPath="$PROJECT_DIR$/client/src/app/search/search.component.html" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/search/search_bg.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/fa-brands.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/fa-brands.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/fa-regular.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/fa-regular.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/fa-solid.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/fa-solid.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/fontawesome-all.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/fontawesome-all.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/fontawesome.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/fontawesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pest/pest.component.css" afterPath="$PROJECT_DIR$/client/src/app/pest/pest.component.css" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles.css" afterPath="$PROJECT_DIR$/client/src/styles.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,20 +18,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pest.component.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pest.component.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/app/pest/pest.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="849">
-              <caret line="58" column="1" lean-forward="false" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+            <state relative-caret-position="390">
+              <caret line="109" column="17" lean-forward="false" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pest.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pest.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/app/pest/pest.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1724">
+            <state relative-caret-position="-1214">
               <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding />
             </state>
@@ -64,8 +61,9 @@
         <option value="$PROJECT_DIR$/client/src/app/home/home.component.html" />
         <option value="$PROJECT_DIR$/client/src/app/search/search.component.html" />
         <option value="$PROJECT_DIR$/client/src/app/search/search.component.css" />
-        <option value="$PROJECT_DIR$/client/src/app/pest/pest.component.css" />
         <option value="$PROJECT_DIR$/client/src/app/pest/pest.component.html" />
+        <option value="$PROJECT_DIR$/client/src/styles.css" />
+        <option value="$PROJECT_DIR$/client/src/app/pest/pest.component.css" />
       </list>
     </option>
   </component>
@@ -84,6 +82,28 @@
     <option name="y" value="167" />
     <option name="width" value="1303" />
     <option name="height" value="542" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CssInvalidMediaFeature</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -183,12 +203,12 @@
       <option name="presentableId" value="Default" />
       <updated>1513376125736</updated>
       <workItem from="1513376128377" duration="15451000" />
-      <workItem from="1513434708044" duration="4693000" />
+      <workItem from="1513434708044" duration="5970000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20144000" />
+    <option name="totallyTimeSpent" value="21421000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="167" width="1311" height="783" extended-state="6" />
@@ -351,18 +371,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/pest/pest.component.css">
+    <entry file="file://$PROJECT_DIR$/client/src/app/pest/pest.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="849">
-          <caret line="58" column="1" lean-forward="false" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+        <state relative-caret-position="-1214">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/pest/pest.component.html">
+    <entry file="file://$PROJECT_DIR$/client/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1724">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/pest/pest.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="109" column="17" lean-forward="false" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
           <folding />
         </state>
       </provider>
