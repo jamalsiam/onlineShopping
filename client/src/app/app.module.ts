@@ -11,6 +11,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
 import { SearchComponent } from './search/search.component';
 import { PestComponent } from './pest/pest.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PestComponent } from './pest/pest.component';
     AboutComponent,
     NavBarComponent,
     SearchComponent,
-    PestComponent
+    PestComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

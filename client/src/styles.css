@@ -6,7 +6,9 @@ body{
 body *{
   outline: none;
 }
-
+.clear-both{
+  clear: both
+}
 
 @media screen and (max-width: 1200px) {
   .item-container .item {
@@ -17,16 +19,12 @@ body *{
 
 @media screen and (max-width: 600px) {
   .item-container .item {
-
     width: 46%!important;
   }
 }
 
-
-
 @media screen and (max-width: 400px) {
   .item-container .item {
-
     width: 98%!important;
   }
 }
