@@ -1,6 +1,6 @@
 .nav{
   background: #140f0e96;
-  height: 34px;
+  height: 38px;
   position: absolute;
   width: 100%;
 }
@@ -41,7 +41,3 @@
 
 }
 
-.nav .content ul li  a:hover{
-color: #387e84;
-border-bottom: 1px solid #387e84;
-}

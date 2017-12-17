@@ -14,6 +14,12 @@ body *{
   .item-container .item {
     width: 29%!important;
   }
+  .signup-box{
+    width: 37%!important;
+  }
+  .signup-box .row{
+    margin-bottom: 4.8%!important;
+  }
 }
 
 
@@ -21,10 +27,20 @@ body *{
   .item-container .item {
     width: 46%!important;
   }
+
+  .signup-box[_ngcontent-c3] {
+    width: 50% !important;
+  }
+
 }
 
 @media screen and (max-width: 400px) {
   .item-container .item {
     width: 98%!important;
+  }
+  .signup-box[_ngcontent-c3] {
+    margin-top: 37px!important;
+    margin-bottom: 0px!important;
+    width: 100% !important;
   }
 }
