@@ -17,11 +17,14 @@
   background: #00000091;
 }
 
-
-.signup-box form h4{
+.signup-box .error {
+  color: red;
   padding-left: 5%;
 }
-.signup-box form button{
+.signup-box  h4{
+  padding-left: 5%;
+}
+.signup-box  button{
   margin: auto;
   width: 90%;
   display: block;
@@ -32,10 +35,10 @@
   border-radius: 5px;
 }
 
-.signup-box form button:hover{
+.signup-box  button:hover{
   background: #ffffff21;
 }
-.signup-box form button:active{
+.signup-box  button:active{
   background: #0000004f;
 }
 .signup-box input[type='email'] , .signup-box input[type='password'] , .signup-box input[type='text']{

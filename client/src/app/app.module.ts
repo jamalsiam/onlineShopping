@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { LocalStorageModule } from 'angular-2-local-storage';
+
 
 import {DataService} from './data.service';
 import { AppRoutingModule } from './app-routing.module';
@@ -34,7 +36,11 @@ import { ViewItemComponent } from './view-item/view-item.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    LocalStorageModule.withConfig({
+      prefix: 'my-app',
+      storageType: 'localStorage'
+    })
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

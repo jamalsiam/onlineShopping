@@ -23,14 +23,22 @@ export class DataService {
   }
 
 
-  getMethod (){
-    return this.http.get('/api/getmethod').map(res=> res.json());
+  getMethod() {
+    return this.http.get('/api/getmethod').map(res => res.json());
     // this._data.getMethod().subscribe(datas =>{
     //   console.log(datas);
     //   this.name=datas.name;
   }
 
-  postMethod (record){
+  signUp(record) {
+    let headers: Headers;
+    headers = new Headers();
+    this.createAuthorizationHeader(headers);
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('/api/signup', record, {headers: headers}).map(res => res.json())
+  }
+
+  postMethod(record) {
     var headers = new Headers();
     this.createAuthorizationHeader(headers);
     headers.append('Content-Type', 'application/json');

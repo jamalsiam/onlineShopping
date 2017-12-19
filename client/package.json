@@ -21,10 +21,12 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "angular-web-storage": "^1.0.1",
     "core-js": "^2.4.1",
+    "primeng": "latest",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14",
-    "primeng": "latest"
+    "angular-2-local-storage": "latest"
   },
   "devDependencies": {
     "@angular/cli": "1.4.7",
