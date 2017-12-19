@@ -1,0 +1,21 @@
+
+.view-page{
+  position: inherit;
+  height: max-content;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  min-height: 69vh;
+}
+.main-image{
+  width: 30%;
+  float: left;
+
+
+}
+
+.main-image img{
+  display: block;
+  width: -webkit-fill-available;
+  margin: auto;
+}
