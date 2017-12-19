@@ -13,6 +13,8 @@ import { SearchComponent } from './search/search.component';
 import { PestComponent } from './pest/pest.component';
 import { FooterComponent } from './footer/footer.component';
 import { SignupComponent } from './signup/signup.component';
+import { SigninComponent } from './signin/signin.component';
+import { ViewItemComponent } from './view-item/view-item.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { SignupComponent } from './signup/signup.component';
     SearchComponent,
     PestComponent,
     FooterComponent,
-    SignupComponent
+    SignupComponent,
+    SigninComponent,
+    ViewItemComponent
   ],
   imports: [
     BrowserModule,

@@ -9,7 +9,9 @@ body *{
 .clear-both{
   clear: both
 }
-
+.space{
+ margin-top: 40px;
+}
 @media screen and (max-width: 1200px) {
   .item-container .item {
     width: 29%!important;
