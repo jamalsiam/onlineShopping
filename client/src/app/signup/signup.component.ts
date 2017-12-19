@@ -29,6 +29,7 @@ export class SignupComponent implements OnInit {
                             password: this.password}).subscribe(res => {
                               if (res.data === 'signup') {
                                     this.local.set('onlineShopUserId', res.id);
+                                    this.router.navigate(['']);
 
                               }else {
                                 this.msg = res.data;
