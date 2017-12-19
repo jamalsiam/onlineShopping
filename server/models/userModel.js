@@ -8,19 +8,24 @@ var SALT_WORK_FACTOR = 10;
 var UserSchema = new mongoose.Schema({
   username: {
     type: String,
-    required: true,
-    unique: true
+    required: true
   },
 
   password: {
     type: String,
     required: true
   },
-  userType:String,
-  phone:String,
-  address:String,
-  emailAddress:String,
-  salt: String
+
+  phone:{
+    type:String
+  },
+  address:{
+    type:String
+  },
+  email:{
+    type:String,
+    required:true
+  }
   
 });
 
@@ -65,4 +70,4 @@ UserSchema.pre('save', function (next) {
   });
 });
 
-module.exports = mongoose.model('users', UserSchema);
+module.exports = mongoose.model('onlineshoping', UserSchema);

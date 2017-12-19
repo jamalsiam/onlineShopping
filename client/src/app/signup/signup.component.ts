@@ -11,11 +11,11 @@ import {DataService} from '../data.service';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  private email: string;
-  private username: string;
-  private password: string;
-  private confirmPassword:  string;
-  private msg: string ;
+   email: string;
+   username: string;
+   password: string;
+   confirmPassword:  string;
+   msg: string ;
   constructor(private _service: DataService, private local: LocalStorageService, private router: Router) {
   }
 
