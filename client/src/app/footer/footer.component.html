@@ -2,16 +2,20 @@
 <footer class="footer-distributed">
 
   <div class="footer-left">
-
+cc
     <h3>Online<span>Shopping</span></h3>
 
     <p class="footer-links">
 
       <a routerLink="">Home</a>
       .
-      <a routerLink="signin">SignIn</a>
+      <a *ngIf="!username" routerLink="signin">SignIn</a>
       ·
-      <a routerLink="signup">SignUp</a>
+      <a *ngIf="!username" routerLink="signup">SignUp</a>
+      .
+      <a *ngIf="username" routerLink="myprofile">{{username}}</a>
+      ·
+      <a *ngIf="username" routerLink="signout">(SignOut)</a>
     </p>
 
     <p class="footer-company-name">Company Name &copy; 2018</p>
