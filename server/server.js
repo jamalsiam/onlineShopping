@@ -19,6 +19,7 @@ var db = mongoose.connection;
 
 app.post('/api/signup',handlers.handelUser.signUp)
 app.post('/api/signin',handlers.handelUser.signIn)
+app.post('/api/getusername',handlers.handelUser.getUserName)
 
 
 app.listen(process.env.PORT || 8000);

@@ -51,6 +51,16 @@ module.exports.handelUser = {
                         });
                 }
             });
+    },
+    getUserName:function(req, res){
+        User.findOne({_id:req.body.id})
+            .then(function(user){
+                if(!user){
+                    res.json({data: 'fail'});
+                } else {
+                    res.json({data: 'success',username: user.username})
+                }
+            })
     }
 }
 
