@@ -9,8 +9,8 @@
       <li><a routerLink="/info">Info</a></li>
       <li><a *ngIf="!username" routerLink="/signin">SignIn</a></li>
       <li><a *ngIf="!username" routerLink="/signup">SignUp</a></li>
-      <li><a *ngIf="username" routerLink="/signup">{{username}}</a></li>
-      <li><a *ngIf="username" routerLink="/signup">(SignOut)</a></li>
+      <li><a *ngIf="username" routerLink="/myporfile">{{username}}</a></li>
+      <li><a *ngIf="username" routerLink="/signout">(SignOut)</a></li>
 		</ul>
 	</div>
 </nav>

@@ -5,6 +5,7 @@ import {AboutComponent} from './about/about.component';
 import { SignupComponent } from './signup/signup.component';
 import {SigninComponent} from './signin/signin.component';
 import {ViewItemComponent} from './view-item/view-item.component';
+import {SignoutComponent} from './signout/signout.component';
 
 const routes: Routes = [
 {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'view',
     component: ViewItemComponent
+  },
+  {
+    path: 'signout',
+    component: SignoutComponent
   }
 ];
 

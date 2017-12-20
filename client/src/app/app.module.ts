@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { ViewItemComponent } from './view-item/view-item.component';
+import { SignoutComponent } from './signout/signout.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ViewItemComponent } from './view-item/view-item.component';
     FooterComponent,
     SignupComponent,
     SigninComponent,
-    ViewItemComponent
+    ViewItemComponent,
+    SignoutComponent
   ],
   imports: [
     BrowserModule,
