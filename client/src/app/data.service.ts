@@ -35,7 +35,15 @@ export class DataService {
     headers = new Headers();
     this.createAuthorizationHeader(headers);
     headers.append('Content-Type', 'application/json');
-    return this.http.post('/api/signup', record, {headers: headers}).map(res => res.json())
+    return this.http.post('/api/signup', record, {headers: headers}).map(res => res.json());
+  }
+
+  signIn(record) {
+    let headers: Headers;
+    headers = new Headers();
+    this.createAuthorizationHeader(headers);
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('/api/signin', record, {headers: headers}).map(res => res.json());
   }
 
   postMethod(record) {

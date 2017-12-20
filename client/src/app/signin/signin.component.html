@@ -2,24 +2,22 @@
 <div class="signup-page">
 
   <div class="signup-box">
-    <form method="post">
       <div class="row">
         <h4>SignIn</h4>
       </div>
       <div class="row">
-        <input type="email" placeholder="example@example.com"  >
+        <input type="email" placeholder="example@example.com" [(ngModel)]="email"  >
       </div>
 
       <div class="row">
-        <input type="password" placeholder="*********">
+        <input type="password" placeholder="*********" [(ngModel)]="password">
       </div>
 
       <div class="row">
-        <button>SignIn</button>
+        <button (click)="signIn()">SignIn</button>
       </div>
-    </form>
     <div class="row">
-      <p>.</p>
+      <p class="error">{{msg}}</p>
     </div>
   </div>
 </div>
