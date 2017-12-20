@@ -31,6 +31,26 @@ module.exports.handelUser = {
             {
             res.json({data:'the password is short'})
         }
+    },
+    signIn:function(req, res) {
+        var email = req.body.email;
+        var password = req.body.password;
+        User.findOne({email: email})
+            .then(function (users) {
+                if (!users) {
+                    res.json({data:"user not found"})
+                } else {
+                    users.comparePasswords(password)
+                        .then(function (isMatch) {
+                            if (isMatch) {
+                                res.json({data:"signin",id:users._id})
+                            } else {
+                                console.log({data:"password "})
+                                res.json({data:"password not matched"})
+                            }
+                        });
+                }
+            });
     }
 }
 
