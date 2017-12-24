@@ -1,0 +1,60 @@
+.profile-page{
+  height: 69vh;
+}
+
+.tool{
+  width: 20%;
+  margin: auto;
+  text-align: center;
+}
+
+.tool button{
+  border: none;
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+  background: #0000000a;
+  border-radius: 50px;
+}
+.tool button:hover{
+    background: #0013243d;
+}
+
+
+.tool .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+
+.tool .tooltip .tooltiptext:after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent
+}
+.tool .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: 5px;
+}
+
+.tool  .tooltip:hover .tooltiptext {
+  visibility: visible;
+}

@@ -6,11 +6,12 @@ body{
 body *{
   outline: none;
 }
+
 .clear-both{
   clear: both
 }
 .space{
- margin-top: 40px;
+  padding-bottom: 40px;
 }
 @media screen and (max-width: 1200px) {
   .item-container .item {
