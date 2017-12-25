@@ -18,9 +18,11 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://jeme:123@ds115918.mlab.co
 var db = mongoose.connection;
 
 
-app.post('/api/signup',handlers.handelUser.signUp)
-app.post('/api/signin',handlers.handelUser.signIn)
-app.post('/api/getusername',handlers.handelUser.getUserName)
+app.post('/api/signup',handlers.handelUser.signUp);
+app.post('/api/signin',handlers.handelUser.signIn);
+app.post('/api/getusername',handlers.handelUser.getUserName);
+
+app.post('/api/additem',handlers.handelItem.addItem);
 
 
 app.listen(process.env.PORT || 8000);

@@ -11,9 +11,11 @@ var ItemSchema = new mongoose.Schema({
     required: true
   },
 
-    image: [
+    images: [
         {
-          type:String
+            image:{
+                type: String
+            }
         }
     ],
 
@@ -24,16 +26,13 @@ var ItemSchema = new mongoose.Schema({
     type:String
   },
   category:{
-        type:String,
-        required:true
+        type:String
   },
   price:{
-        type:String,
-        required:true
+        type:String
   },
   off:{
-        type:String,
-        required:true
+        type:String
   }
   
 });

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="707d4992-8637-404c-a205-d5b565713534" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/app/add-item/add-item.component.ts" afterPath="$PROJECT_DIR$/client/src/app/add-item/add-item.component.ts" />
       <change beforePath="$PROJECT_DIR$/server/handlers.js" afterPath="$PROJECT_DIR$/server/handlers.js" />
+      <change beforePath="$PROJECT_DIR$/server/models/itemModel.js" afterPath="$PROJECT_DIR$/server/models/itemModel.js" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" afterPath="$PROJECT_DIR$/server/server.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,27 +22,27 @@
         <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="8" />
+              <caret line="20" column="51" lean-forward="false" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="handlers.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="handlers.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/handlers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+            <state relative-caret-position="415">
+              <caret line="77" column="25" lean-forward="true" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="itemModel.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="itemModel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/models/itemModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="41" column="50" lean-forward="false" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+            <state relative-caret-position="534">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -50,8 +51,8 @@
       <file leaf-file-name="add-item.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/app/add-item/add-item.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="31" />
+            <state relative-caret-position="323">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -85,7 +86,6 @@
         <option value="$PROJECT_DIR$/client/src/app/footer/footer.component.ts" />
         <option value="$PROJECT_DIR$/client/src/app/footer/footer.component.html" />
         <option value="$PROJECT_DIR$/client/src/app/nav-bar/nav-bar.component.ts" />
-        <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/client/src/app/signout/signout.component.ts" />
         <option value="$PROJECT_DIR$/../NODE trianning/module.js" />
         <option value="$PROJECT_DIR$/../NODE trianning/server.js" />
@@ -100,8 +100,9 @@
         <option value="$PROJECT_DIR$/client/src/app/add-item/add-item.component.css" />
         <option value="$PROJECT_DIR$/client/src/app/add-item/add-item.component.html" />
         <option value="$PROJECT_DIR$/client/src/app/data.service.ts" />
-        <option value="$PROJECT_DIR$/server/handlers.js" />
         <option value="$PROJECT_DIR$/client/src/app/add-item/add-item.component.ts" />
+        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/server/handlers.js" />
         <option value="$PROJECT_DIR$/server/models/itemModel.js" />
       </list>
     </option>
@@ -341,12 +342,12 @@
       <workItem from="1514098409310" duration="1854000" />
       <workItem from="1514100305965" duration="13809000" />
       <workItem from="1514117677290" duration="176000" />
-      <workItem from="1514208576358" duration="6507000" />
+      <workItem from="1514208576358" duration="8376000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106394000" />
+    <option name="totallyTimeSpent" value="108263000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="580" y="162" width="1311" height="783" extended-state="6" />
@@ -733,24 +734,8 @@
         <state relative-caret-position="469">
           <caret line="66" column="39" lean-forward="false" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#43#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/handlers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -759,15 +744,23 @@
         <state relative-caret-position="204">
           <caret line="12" column="68" lean-forward="false" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="68" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="51" lean-forward="false" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/app/add-item/add-item.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="31" />
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
@@ -776,8 +769,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/models/itemModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="41" column="50" lean-forward="false" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+        <state relative-caret-position="534">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/handlers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="77" column="25" lean-forward="true" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
           <folding />
         </state>
       </provider>

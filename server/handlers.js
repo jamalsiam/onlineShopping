@@ -1,5 +1,5 @@
 var User=require('./models/userModel.js');
-
+var Item=require('./models/itemModel.js')
 module.exports.handelUser = {
 
     signUp: function(req, res) {
@@ -67,6 +67,15 @@ module.exports.handelUser = {
 
 module.exports.handelItem = {
     addItem:function (req,res) {
-        
+        var item=req.body;
+        Item.create({
+            userId:item.userId,
+            images: item.image,
+            name: item.name,
+            number: item.number,
+            category: item.category,
+            price: item.price,
+            off: item.off
+        })
     }
 }
