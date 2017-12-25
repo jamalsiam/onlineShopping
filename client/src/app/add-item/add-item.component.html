@@ -4,24 +4,24 @@
 <h3>Insert item details</h3>
 <div class="clear-both"></div>
 <div class="row">
-  <input  type="text" class="name" placeholder="Name">
-  <input type="number" class="number-of-item" placeholder="Number">
+  <input  type="text" class="name" placeholder="Name" [(ngModel)]="itemName">
+  <input type="number" class="number-of-item" placeholder="Number"[(ngModel)]="itemNumber" >
 </div>
 <div class="clear-both"></div>
 <div class="row">
-  <select >
+  <select [(ngModel)]="itemCategory">
     <option>--Category--</option>
-    <option value="">Mobile</option>
-    <option value="">Laptop</option>
-    <option value="">Accessories</option>
+    <option value="mobile">Mobile</option>
+    <option value="laptop">Laptop</option>
+    <option value="accessories">Accessories</option>
   </select>
 </div>
 
 <div class="clear-both"></div>
 <div class="row price">
-  <input type="number" placeholder="Price">
+  <input type="number" placeholder="Price" [(ngModel)]="itemPrice">
   <div class="width-space"></div>
-  <input type="number" PLACEHOLDER="Off %">
+  <input type="number" PLACEHOLDER="Off %"[(ngModel)]="itemOff">
 </div>
 <div class="clear-both"></div>
 <div>

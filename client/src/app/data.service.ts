@@ -59,4 +59,12 @@ export class DataService {
     return this.http.post('/api/postmethod', record, {headers: headers}).map(res => res.json())
   }
 
+  AddItem(record)  {
+    let headers: Headers;
+    headers = new Headers();
+    this.createAuthorizationHeader(headers);
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('/api/addItem', record, {headers: headers}).map(res => res.json());
+  }
+
 }
