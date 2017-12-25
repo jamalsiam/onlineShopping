@@ -1,0 +1,39 @@
+<div class="esc">
+  <i class="fa fa-times" aria-hidden="true" onclick="off()"></i>
+</div>
+<h3>Insert item details</h3>
+<div class="clear-both"></div>
+<div class="row">
+  <input  type="text" class="name" placeholder="Name">
+  <input type="number" class="number-of-item" placeholder="Number">
+</div>
+<div class="clear-both"></div>
+<div class="row">
+  <select >
+    <option>--Category--</option>
+    <option value="">Mobile</option>
+    <option value="">Laptop</option>
+    <option value="">Accessories</option>
+  </select>
+</div>
+
+<div class="clear-both"></div>
+<div class="row price">
+  <input type="number" placeholder="Price">
+  <div class="width-space"></div>
+  <input type="number" PLACEHOLDER="Off %">
+</div>
+<div class="clear-both"></div>
+<div>
+  <br>
+  <span *ngFor="let one of jsonImage" >
+  <img   src='data:image/jpeg;base64,{{one.image}}' width="100" height="100">
+  </span>
+    <input type="file" id="filePicker" (change)="handleFileSelect($event)">
+</div>
+
+<div class="row">
+  <button  class="publish" (click)="publish()" >
+    Publish
+  </button>
+</div>

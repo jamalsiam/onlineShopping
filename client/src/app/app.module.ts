@@ -19,6 +19,7 @@ import { SigninComponent } from './signin/signin.component';
 import { ViewItemComponent } from './view-item/view-item.component';
 import { SignoutComponent } from './signout/signout.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AddItemComponent } from './add-item/add-item.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ProfileComponent } from './profile/profile.component';
     SigninComponent,
     ViewItemComponent,
     SignoutComponent,
-    ProfileComponent
+    ProfileComponent,
+    AddItemComponent
   ],
   imports: [
     BrowserModule,

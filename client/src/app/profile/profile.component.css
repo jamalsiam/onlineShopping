@@ -2,6 +2,8 @@
   height: 69vh;
 }
 
+
+
 .tool{
   width: 20%;
   margin: auto;
@@ -57,4 +59,33 @@
 
 .tool  .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+
+}
+
+
+#overlay .flex{
+  display: flex;
+}
+
+#overlay .view{
+  margin: auto;
+  margin-top: 84px;
+  background: white;
+  width: 60%;
+  border-radius: 4px;
 }
