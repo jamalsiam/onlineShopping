@@ -64,3 +64,9 @@ module.exports.handelUser = {
     }
 }
 
+
+module.exports.handelItem = {
+    addItem:function (req,res) {
+        
+    }
+}

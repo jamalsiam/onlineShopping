@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DataService} from '../data.service';
-import {LocalStorageService} from "angular-2-local-storage";
+import {LocalStorageService} from 'angular-2-local-storage';
 
 @Component({
   selector: 'app-add-item',
@@ -19,14 +19,15 @@ export class AddItemComponent implements OnInit {
   constructor(private service: DataService , private storage: LocalStorageService ) { }
 
   publish() {
-   this.service.AddItem({ image: this.jsonImage,
+   this.service.AddItem({
+                          userId: this.storage.get('onlineShopUserId'),
+                          image: this.jsonImage,
                           name: this.itemName,
                           number: this.itemNumber,
                           category: this.itemCategory,
                           price: this.itemPrice,
                           off: this.itemOff})
    .subscribe ( res => {
-
    });
   }
 
