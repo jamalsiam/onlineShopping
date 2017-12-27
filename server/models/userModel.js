@@ -17,10 +17,12 @@ var UserSchema = new mongoose.Schema({
   },
 
   phone:{
-    type:String
+    type:String,
+    default:9627000000
   },
   address:{
-    type:String
+    type:String,
+    default:"amman"
   },
   email:{
     type:String,
