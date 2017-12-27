@@ -1,6 +1,7 @@
 <div id="overlay">
   <div class="flex">
-    <div class="view"> <app-add-item></app-add-item> </div>
+    <div class="view" *ngIf="displayViewResult=='app-add-item'"> <app-add-item></app-add-item> </div>
+    <div class="view" *ngIf="displayViewResult=='app-settings'"> <app-settings></app-settings> </div>
   </div>
 
 </div>
@@ -12,20 +13,20 @@
   <!--START Tool-->
   <div class="tool">
     <div class="tooltip">
-      <button onclick="on()">
+      <button onclick="on()" (click)="displayView('app-add-item')">
       <i class="fa fa-plus-square" aria-hidden="true"></i>
     </button>
       <span class="tooltiptext">Add Item</span>
     </div>
 
     <div class="tooltip">
-      <button>
+      <button onclick="on()" (click)="displayView('app-settings')" >
         <i class="fa fa-cog" aria-hidden="true"></i>
       </button>
       <span class="tooltiptext">Settings</span>
     </div>
     <div class="tooltip">
-      <button>
+      <button onclick="on()"  (click)="displayView(3)">
         <i class="fa fa-bookmark" aria-hidden="true"></i>
       </button>
       <span class="tooltiptext">Saved</span>

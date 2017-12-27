@@ -9,6 +9,7 @@
 
 .esc i {
   float: right;
+  cursor: pointer;
 }
 
 .row{

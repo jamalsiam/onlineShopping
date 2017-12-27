@@ -1,0 +1,94 @@
+.esc{
+  padding: 15px;
+}
+.esc i {
+  float: right;
+  cursor: pointer;
+}
+
+.row{
+  text-align: center;
+  margin: 15px 15px 15px 15px;
+}
+
+
+table{
+  margin: auto;
+  width: 90%;
+}
+tr {
+  height: 50px;
+}
+.label{
+  width: 25%;
+  padding-top: 10px;
+
+}
+.label:after{
+  content: "";
+  display: block;
+  border-top: 2px solid;
+  width: 10px;
+}
+table input:not([type=checkbox]){
+  width: 100%;
+  border: none;
+  height: 30px;
+  border-bottom: 1px solid;
+}
+
+
+table input:focus{
+  border-bottom: 1px solid #5383d3;
+}
+
+table input:hover{
+  border-bottom: 1px solid #5383d3;
+}
+
+table select{
+  width: 101%;
+  height: 30px;
+  background: white;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+table select:hover{
+  border-bottom: 1px solid #5383d3;
+}
+button{
+  margin: auto;
+  display: block;
+  height: 30px;
+  width: 120px;
+
+  color: white;
+  border: none;
+}
+.Save{
+  background: #5383d3;
+}
+.Save:hover{
+  background: #4974bb;
+}
+
+.Save:active{
+  background: #4771b7;
+}
+
+.Delete{
+  background: #ff0000;
+}
+.Delete:hover{
+  background: #ec0000;
+}
+
+.Delete:active{
+  background: #d90000;
+}
+
+p{
+  text-align: center;
+  color: red;
+}

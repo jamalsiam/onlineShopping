@@ -1,0 +1,48 @@
+<div class="esc">
+  <i class="fa fa-times" aria-hidden="true" onclick="off()"></i>
+</div>
+<h3>Settings</h3>
+
+<table >
+  <tr>
+    <td class="label">Name:</td>
+    <td><input type="text"  placeholder="User Name" [(ngModel)]="userName" [style.border-bottom-color] = "!userName ? 'red' : '' " ></td>
+  </tr>
+  <tr>
+    <td class="label" >Mobile Number:</td>
+    <td><input type="number" placeholder="Mobile Number" [(ngModel)]="mobile" [style.border-bottom-color] = "!mobile ? 'red' : '' "></td>
+  </tr>
+  <tr>
+    <td class="label" >City:</td>
+    <td>
+      <select [(ngModel)]="city" [style.border-bottom-color] = "!city ? 'red' : '' ">
+        <option value="amman">Amman</option>
+        <option value="irbid"amman>Irbid</option>
+        <option value="zarqa"amman>Zarqa</option>
+      </select>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="label">Account:</td>
+    <td><input type="checkbox" [(ngModel)]="deleteAccount" (change)="deleteAccountMethod(deleteAccount)" >if you want delete your account. </td>
+  </tr >
+  <tr *ngIf="deleteAccount">
+    <td class="label">
+    Confirm password:
+    </td>
+    <td>
+      <input type="password" placeholder="**********" [(ngModel)]="password" [style.border-bottom-color] = "!password ? 'red' : '' " >
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <button class="{{btnText}}" (click)="settings()"> {{btnText}}</button>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <p>{{msg}} </p>
+    </td>
+  </tr>
+</table>

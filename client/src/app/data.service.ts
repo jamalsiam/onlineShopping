@@ -67,4 +67,25 @@ export class DataService {
     return this.http.post('/api/addItem', record, {headers: headers}).map(res => res.json());
   }
 
+  deleteAccount(record)  {
+    let headers: Headers;
+    headers = new Headers();
+    this.createAuthorizationHeader(headers);
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('/api/deleteaccount', record, {headers: headers}).map(res => res.json());
+  }
+  updateAccount(record)  {
+    let headers: Headers;
+    headers = new Headers();
+    this.createAuthorizationHeader(headers);
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('/api/updateaccount', record, {headers: headers}).map(res => res.json());
+  }
+  getUserInfo(record)  {
+    let headers: Headers;
+    headers = new Headers();
+    this.createAuthorizationHeader(headers);
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('/api/getuserinfo', record, {headers: headers}).map(res => res.json());
+  }
 }

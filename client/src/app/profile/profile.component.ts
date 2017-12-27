@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-
+  displayViewResult: string;
   constructor() { }
-
+  displayView (displayViewResult) {
+    this.displayViewResult = displayViewResult;
+  }
   ngOnInit() {
   }
 
