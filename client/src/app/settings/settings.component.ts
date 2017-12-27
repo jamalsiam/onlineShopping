@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {DataService} from '../data.service';
 import {LocalStorageService} from 'angular-2-local-storage';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-settings',
@@ -16,7 +17,7 @@ deleteAccount: boolean;
 btnText = 'Save';
 msg: string;
 
-  constructor(private storage: LocalStorageService , private service: DataService) {
+  constructor(private storage: LocalStorageService , private service: DataService, private router: Router) {
   this.getUserInfo();
   }
 
@@ -33,6 +34,13 @@ msg: string;
       if (this.password) {
         this.service.deleteAccount({_id: this.storage.get('onlineShopUserId') , password : this.password})
           .subscribe(res => {
+            if (res.data === 'success') {
+              this.storage.remove('onlineShopUserId');
+              this.router.navigate(['']);
+              location.reload();
+            } else {
+              this.msg = res.data;
+            }
 
           });
       }else {

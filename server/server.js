@@ -23,6 +23,7 @@ app.post('/api/signin',handlers.handelUser.signIn);
 app.post('/api/getusername',handlers.handelUser.getUserName);
 app.post('/api/getuserinfo', handlers.handelUser.getUserInfo);
 app.post('/api/updateaccount', handlers.handelUser.upDateProfile);
+app.post('/api/deleteaccount', handlers.handelUser.deleteAccount);
 
 app.post('/api/additem',handlers.handelItem.addItem);
 

@@ -88,6 +88,33 @@ module.exports.handelUser = {
                 })
 
         }
+    },
+    deleteAccount:function (req, res) {
+        User.findOne({_id:req.body._id})
+            .then(function (user) {
+                user.comparePasswords(req.body.password)
+                    .then(function (isMatch) {
+                        if(isMatch) {
+                            res.json({data:"success"});
+                            User.findByIdAndRemove(req.body._id, (err, result) => {});
+                        } else {
+                            res.json({data:"password doesn't match"});
+                        }
+                    });
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
 
