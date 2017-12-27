@@ -61,6 +61,17 @@ module.exports.handelUser = {
                     res.json({data: 'success',username: user.username})
                 }
             })
+    },
+    getUserInfo:function (req, res) {
+        User.findById(req.body.id, function (err, user) {
+
+
+            res.json({data :'success',
+                     userName:user.username,
+                     mobile:user.mobile,
+                     location:user.location,
+                     email:user.email});
+        } );
     }
 }
 

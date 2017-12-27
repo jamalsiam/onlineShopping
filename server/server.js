@@ -21,6 +21,7 @@ var db = mongoose.connection;
 app.post('/api/signup',handlers.handelUser.signUp);
 app.post('/api/signin',handlers.handelUser.signIn);
 app.post('/api/getusername',handlers.handelUser.getUserName);
+app.post('/api/getuserinfo', handlers.handelUser.getUserInfo);
 
 app.post('/api/additem',handlers.handelItem.addItem);
 

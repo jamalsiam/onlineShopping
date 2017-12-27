@@ -17,7 +17,7 @@ btnText = 'Save';
 msg: string;
 
   constructor(private storage: LocalStorageService , private service: DataService) {
-    this.getUserInfo();
+  this.getUserInfo();
   }
 
   deleteAccountMethod(mode) {
@@ -54,10 +54,10 @@ msg: string;
   }
   ngOnInit() {
   }
-
   private getUserInfo() {
     this.service.getUserInfo({id: this.storage.get('onlineShopUserId')})
       .subscribe(res => {
+        console.log(res)
         if (res.data === 'success') {
           this.userName = res.userName;
           this.city = res.location;
