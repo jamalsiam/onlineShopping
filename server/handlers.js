@@ -106,19 +106,11 @@ module.exports.handelUser = {
     getSale:function (req,res) {
         var record=[];
 
-        Item.find({userId:req.body.id})
+        Item.find({userId:req.body.id, 'images.0' : { $exists:true}})
             .sort('-_id')
-            .select('userId name price off images')
+            .select('userId name price off images.$')
             .then(function (data) {
-                for (var i=0;i<data.length; i++){
-                    record.push({userId:data[i].userId,
-                        name:data[i].name,
-                        price:data[i].price,
-                        off:data[i].off,
-                        image:data[i].images[0].image,
-                        _id:data[i].id})
-                }
-                res.json({sales:record})
+                res.json({sales:data})
             })
     }
 }
@@ -138,22 +130,31 @@ module.exports.handelItem = {
         })
     },
     getOffer:function (req,res) {
-        var record=[];
-
-        Item.find({ off: { $gt: "84" }})
+        Item.find({ off : { $gte : '84' }, 'images.0' : { $exists:true}})
             .limit(8)
             .sort('-off')
-            .select('userId name price off images')
+            .select('userId name price off  images.$')
             .then(function (data) {
-                 for (var i=0;i<data.length; i++){
-                     record.push({userId:data[i].userId,
-                         name:data[i].name,
-                         price:data[i].price,
-                         off:data[i].off,
-                         image:data[i].images[0].image,
-                     _id:data[i].id})
-                 }
-            res.json({offers:record})
+
+            res.json({offers:data})
         })
+    },
+    getItemInfo:function (req,res) {
+        var record=[];
+        var id=req.body.id;
+        Item.findOne({_id:id})
+            .then(function (item) {
+                if (item) {
+                record.push({item:item});
+                User.findOne({_id:item.userId})
+                    .then(function (user) {
+                        record.push({user:user});
+                        console.log(record);
+                        res.json({info:record})
+                    })
+            } else{
+                    res.json({info:fail})
+                }
+            })
     }
 };

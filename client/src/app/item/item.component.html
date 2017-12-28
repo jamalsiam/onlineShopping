@@ -3,9 +3,9 @@
 <div class="item">
   <div class="item-img-container">
     <div class="new">{{data.new}}</div>
-    <img src='data:image/jpeg;base64,{{data.image}}'>
+    <img src='data:image/jpeg;base64,{{data.images[0].image}}'>
     <div class="item-img-overlay">
-      <a routerLink="view/id:{{data._id}}">SEE INFO</a>
+      <a routerLink="view/{{data._id}}">SEE INFO</a>
     </div>
   </div>
 

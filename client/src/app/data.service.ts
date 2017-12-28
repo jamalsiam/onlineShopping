@@ -99,4 +99,12 @@ export class DataService {
     headers.append('Content-Type', 'application/json');
     return this.http.post('/api/getsale', record, {headers: headers}).map(res => res.json());
   }
+
+  getItemInfo(record) {
+    let headers: Headers;
+    headers = new Headers();
+    this.createAuthorizationHeader(headers);
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('/api/getiteminfo', record, {headers: headers}).map(res => res.json());
+  }
 }

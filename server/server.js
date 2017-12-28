@@ -40,7 +40,8 @@ app.post('/api/deleteaccount', handlers.handelUser.deleteAccount);
 app.post('/api/getsale', handlers.handelUser.getSale);
 
 app.post('/api/additem',handlers.handelItem.addItem);
-app.get('/api/getoffer',handlers.handelItem.getOffer)
+app.post('/api/getiteminfo',handlers.handelItem.getItemInfo);
+app.get('/api/getoffer',handlers.handelItem.getOffer);
 
 app.listen(process.env.PORT || 8000);
 console.log('Running on port 8000...');
