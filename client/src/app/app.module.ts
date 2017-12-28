@@ -21,6 +21,7 @@ import { SignoutComponent } from './signout/signout.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AddItemComponent } from './add-item/add-item.component';
 import { SettingsComponent } from './settings/settings.component';
+import { ItemComponent } from './item/item.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { SettingsComponent } from './settings/settings.component';
     SignoutComponent,
     ProfileComponent,
     AddItemComponent,
-    SettingsComponent
+    SettingsComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,

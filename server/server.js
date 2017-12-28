@@ -20,7 +20,6 @@ app.all('*',function (req,res,next) {
     if(route[1]!=='api'){
         app.use(req.originalUrl, express.static(__dirname + '/../client/dist'));
     }
-
     next();
 })
 

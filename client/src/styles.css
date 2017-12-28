@@ -3,6 +3,12 @@ body{
   margin: 0px!important;
 
 }
+.item-container{
+  height: 72vh;
+  width: 80%;
+  margin: auto;
+}
+
 body *{
   outline: none;
 }
