@@ -31,7 +31,7 @@ const routes: Routes = [
     component: SigninComponent
   },
   {
-    path: 'view',
+    path: 'view/:id',
     component: ViewItemComponent
   },
   {

@@ -10,6 +10,6 @@
 <!--START item-container-->
 <div class="item-container">
 
-  <app-item [name]="'jamal'"></app-item>
+  <app-item *ngFor="let offer of offers" [data]="offer"> </app-item>
 
 </div><!--END item-container-->

@@ -131,5 +131,24 @@ module.exports.handelItem = {
             price: item.price,
             off: item.off
         })
+    },
+    getOffer:function (req,res) {
+        var record=[];
+
+        Item.find({ off: { $gt: "84" }})
+            .limit(8)
+            .sort('-off')
+            .select('userId name price off images')
+            .then(function (data) {
+                 for (var i=0;i<data.length; i++){
+                     record.push({userId:data[i].userId,
+                         name:data[i].name,
+                         price:data[i].price,
+                         off:data[i].off,
+                         image:data[i].images[0].image,
+                     _id:data[i].id})
+                 }
+            res.json({offers:record})
+        })
     }
 };

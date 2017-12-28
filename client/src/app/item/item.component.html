@@ -2,20 +2,20 @@
 <!--START item-->
 <div class="item">
   <div class="item-img-container">
-    <div class="new">New</div>
-    <img src="assets/search_bg.jpg">
+    <div class="new">{{data.new}}</div>
+    <img src='data:image/jpeg;base64,{{data.image}}'>
     <div class="item-img-overlay">
-      <a routerLink="view">SEE INFO</a>
+      <a routerLink="view/id:{{data._id}}">SEE INFO</a>
     </div>
   </div>
 
   <div>
-    <h3>moblie</h3>
-    <p>bla bla bla bla</p>
+    <h3>{{data.name}}</h3>
+    <p>{{data.desc}}</p>
   </div>
   <div>
-    <b>Price: 100$</b>
-    <b>Off: 30%</b>
+    <b>Price: {{data.price}}$</b>
+    <b>Off: {{data.off}}%</b>
   </div>
 </div>
 <!--END item-->

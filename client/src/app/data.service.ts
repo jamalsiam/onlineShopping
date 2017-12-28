@@ -88,4 +88,7 @@ export class DataService {
     headers.append('Content-Type', 'application/json');
     return this.http.post('/api/getuserinfo', record, {headers: headers}).map(res => res.json());
   }
+  getOffer() {
+    return this.http.get('/api/getoffer').map(res => res.json());
+  }
 }
