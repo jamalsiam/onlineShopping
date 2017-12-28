@@ -77,14 +77,14 @@ module.exports.handelUser = {
         var username=req.body.username,
             mobile=req.body.mobile,
             location=req.body.location,
-            id=req.body._id
+            id=req.body._id;
 
         if(mobile && username && location){
             User.update(
                 {_id: id},
                 {$set: {username:username, address:location, phone:mobile}})
                 .then(function (user) {
-                    res.json("success");
+                    res.json({data:"success"});
                 })
 
         }

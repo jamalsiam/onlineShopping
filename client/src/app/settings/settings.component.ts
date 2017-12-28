@@ -16,6 +16,7 @@ password: string;
 deleteAccount: boolean;
 btnText = 'Save';
 msg: string;
+close: string;
 
   constructor(private storage: LocalStorageService , private service: DataService, private router: Router) {
   this.getUserInfo();
@@ -41,7 +42,6 @@ msg: string;
             } else {
               this.msg = res.data;
             }
-
           });
       }else {
         this.msg = 'insert your password';
@@ -53,7 +53,9 @@ msg: string;
                                           mobile : this.mobile,
                                           location: this.city})
           .subscribe(res => {
-
+            if (res.data === 'success') {
+              location.reload();
+            }
           });
       } else {
         this.msg = 'insert all fields';
@@ -65,7 +67,7 @@ msg: string;
   private getUserInfo() {
     this.service.getUserInfo({id: this.storage.get('onlineShopUserId')})
       .subscribe(res => {
-        console.log(res)
+        console.log(res);
         if (res.data === 'success') {
           this.userName = res.userName;
           this.city = res.location;

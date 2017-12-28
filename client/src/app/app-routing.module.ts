@@ -9,7 +9,12 @@ import {SignoutComponent} from './signout/signout.component';
 import {ProfileComponent} from './profile/profile.component';
 
 const routes: Routes = [
-{
+  {
+    path: '',
+    redirectTo: '/',
+    pathMatch: 'full'
+  },
+  {
   path: ''  ,
   component : HomeComponent
 },
@@ -36,6 +41,10 @@ const routes: Routes = [
   {
     path: 'myprofile' ,
     component: ProfileComponent
+  },
+  {
+    path: '**' ,
+    component: HomeComponent
   }
 ];
 
