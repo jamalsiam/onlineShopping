@@ -42,7 +42,7 @@ export class SignupComponent implements OnInit {
     console.log(this.email, this.username);
   }
   ngOnInit() {
-    if(this.local.get('onlineShopUserId') )
+    if (this.local.get('onlineShopUserId') )
     this.router.navigate(['']);
 
   }

@@ -1,11 +1,13 @@
 .profile-page{
-  height: 69vh;
+  min-height: 69vh;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
 
 .tool{
-  width: 20%;
+  width: 101%;
   margin: auto;
   text-align: center;
 }

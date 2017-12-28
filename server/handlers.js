@@ -102,19 +102,24 @@ module.exports.handelUser = {
                         }
                     });
             });
+    },
+    getSale:function (req,res) {
+        var record=[];
 
-
-
-
-
-
-
-
-
-
-
-
-
+        Item.find({userId:req.body.id})
+            .sort('-_id')
+            .select('userId name price off images')
+            .then(function (data) {
+                for (var i=0;i<data.length; i++){
+                    record.push({userId:data[i].userId,
+                        name:data[i].name,
+                        price:data[i].price,
+                        off:data[i].off,
+                        image:data[i].images[0].image,
+                        _id:data[i].id})
+                }
+                res.json({sales:record})
+            })
     }
 }
 
