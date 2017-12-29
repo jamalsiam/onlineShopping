@@ -70,27 +70,28 @@ del{
 
 
 }
-div . black{
-  background: black;
-  transform: rotate(9deg);
+.galary div .img0{
+  z-index: 4;
+  transform: rotate(0deg);
 }
-div .red{
-  background: red;
-  transform: rotate(7deg);
-}
-
-div .green{
-  background: #00ff05;
+.galary div .img1{
+  z-index: 3;
   transform: rotate(4deg);
 }
-div .blue{
-  background: blue;
-  transform: rotate(0deg);
+
+.galary div .img2{
+  z-index: 2;
+  transform: rotate(7deg);
+}
+.galary div .img3{
+  z-index: 1;
+  transform: rotate(9deg);
 }
 
 .imageLength {
   display: none;
   background: #00000075;
+  z-index: 5;
 
 }
 .imageLength p{

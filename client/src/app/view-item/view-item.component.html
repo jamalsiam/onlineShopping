@@ -12,25 +12,23 @@
 
   <div class="galary">
    <div>
-      <div class="black"><img src="assets/search_bg.jpg" height="200" width="200" alt=""></div>
-      <div class="red"><img src="assets/search_bg.jpg" height="200" width="200" alt=""></div>
-      <div class="green"><img src="assets/search_bg.jpg" height="200" width="200" alt=""></div>
-      <div class="blue"><img src="assets/search_bg.jpg" height="200" width="200" alt=""></div>
-     <div class="imageLength" onclick="on()"><p>3</p></div>
+      <div *ngFor="let img of item.images; let i = index" class="img{{i}}"><img src="data:image/jpeg;base64,{{img.image}}" height="200" width="200" alt=""></div>
+
+     <div class="imageLength" onclick="on()"><p>{{item.images.length}}</p></div>
     </div>
 
   </div>
   <div class="info">
-    <p>Item Name : samsung J7 <small class="new">new </small></p>
-    <p>Category : pla pla pla pla <small>[3 of 10 sold]</small> </p>
+    <p>Item Name : {{item.name}} <small class="new">{{item.new}} </small></p>
+    <p>Category : {{item.category}} <small>[3 of {{item.number}} sold]</small> </p>
 
-      <p>Price : 111$  <del>120%</del>  </p>
-    <p>Item location: Amman </p>
+      <p>Price : ${{item.price}}  <del>${{parseInt((item.price * (item.off/10)) + item.price)}}</del>  </p>
+    <p>Item location: {{user.address}} </p>
 
     <h3>Seller Info</h3>
-    <p>Name  : Jamal </p>
-    <p>Moblie : +9627812131 </p>
-    <p>Email  : jamalsiam@gmail.com </p>
+    <p>Name  : {{user.username}} </p>
+    <p>Moblie : {{user.phone}} </p>
+    <p>Email  : {{user.email}} </p>
     <div class="tool">
       <div class="tooltip">
         <button  >
