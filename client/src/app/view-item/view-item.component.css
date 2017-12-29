@@ -1,21 +1,104 @@
-
-.view-page{
-  position: inherit;
-  height: max-content;
-  background-size: cover;
-  background-position: center center;
-  display: flex;
-  min-height: 69vh;
+.flex{
+  height: 100%;
 }
-.main-image{
-  width: 30%;
-  float: left;
-
-
+.viewImage  .x{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: azure;
+  background: #00000033;
+  padding: 3px;
+  border-radius: 26px;
+  cursor: pointer;
 }
-
-.main-image img{
-  display: block;
-  width: -webkit-fill-available;
+.viewImage  .right{
+  position: absolute;
+  right: 10px;
+  top: 48%;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+.viewImage  .right:hover , .viewImage  .left:hover{
+  color: #5a5a5a;
+}
+.viewImage  .left{
+  position: absolute;
+  left: 10px;
+  top: 48%;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+.viewImage img{
+  zoom: 0.4;
   margin: auto;
+  display: block;
+  width: 78%;
+  border: 2px solid #00000026
+}
+
+del{
+  font-size: 13px;
+  color: dimgrey;
+  padding-left: 8px;
+}
+.new{
+  color: green;
+}
+.view-page{
+  min-height: 59vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.space{
+  height: 10vh;
+  padding-bottom: 0px;
+}
+.galary {
+  width: 300px;
+}
+.galary > div{
+  margin: auto;
+  width: 72%;
+}
+.galary div div{
+  height: 200px;
+  width: 200px;
+  box-shadow: 1px 1px 1px 2px #78757563;
+  position: absolute;
+
+
+}
+div . black{
+  background: black;
+  transform: rotate(9deg);
+}
+div .red{
+  background: red;
+  transform: rotate(7deg);
+}
+
+div .green{
+  background: #00ff05;
+  transform: rotate(4deg);
+}
+div .blue{
+  background: blue;
+  transform: rotate(0deg);
+}
+
+.imageLength {
+  display: none;
+  background: #00000075;
+
+}
+.imageLength p{
+  margin: auto;
+  color: #ffffff73;
+  font-size: 65px;
+}
+.galary div:hover .imageLength {
+  display: flex;
+  cursor: pointer;
 }
