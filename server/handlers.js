@@ -1,5 +1,6 @@
 var User=require('./models/userModel.js');
-var Item=require('./models/itemModel.js')
+var Item=require('./models/itemModel.js');
+var Cart=require('./models/cartModel');
 module.exports.handelUser = {
 
     signUp: function(req, res) {
@@ -161,6 +162,19 @@ module.exports.handelItem = {
 
 module.exports.handelCart={
     addToCart:function (req ,res) {
-        console.log(req.body)
+        Cart.findOne({userId:req.body.userId,
+            itemId:req.body.itemId})
+            .then(function (isFound) {
+                if(isFound){
+                    res.json({data:'',err:'Item already added on your cart'});
+                } else {
+                    Cart.create({userId:req.body.userId,// start create
+                        itemId:req.body.itemId})
+                        .then(function (done) {
+                            if(done)
+                                res.json({data:'Added on your cart',err:''});
+                        });// end create
+                }
+            });
     }
 }
