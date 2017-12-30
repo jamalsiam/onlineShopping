@@ -15,6 +15,8 @@ export class ViewItemComponent implements OnInit {
   user: any;
   currentImage: string;
   i: number=0;
+  err: string;
+  data: string;
 
   constructor(private route: ActivatedRoute , private service: DataService, private storage:LocalStorageService) {
 
@@ -45,7 +47,8 @@ export class ViewItemComponent implements OnInit {
   }
   addCart(userId ,itemId){
     this.service.addToCart({userId:userId ,itemId:itemId}).subscribe(res =>{
-
+      this.err=res.err;
+      this.data=res.data;
 
     });
   }

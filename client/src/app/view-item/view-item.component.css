@@ -1,7 +1,12 @@
 .flex{
   height: 100%;
 }
-
+.err{
+  color: red;
+}
+.data{
+  color: green;
+}
 .viewImage  .x{
   position: absolute;
   right: 20px;
