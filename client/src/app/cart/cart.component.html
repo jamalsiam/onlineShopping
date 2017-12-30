@@ -1,6 +1,6 @@
 <!--START item-container-->
 <div class="item-container">
   <img *ngIf="display!==true" src="assets/loader.gif" class="loader" alt="">
-  <app-item *ngFor="let sale of sales" [data]="sale"> </app-item>
+  <app-item *ngFor="let item of cart" [data]="item"> </app-item>
 
 </div><!--END item-container-->

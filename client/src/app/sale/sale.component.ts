@@ -9,10 +9,12 @@ import {DataService} from '../data.service';
 })
 export class SaleComponent implements OnInit {
   sales: any;
+  display:boolean;
   constructor(private storage: LocalStorageService, private service: DataService) {
 
     this.service.getSale({id: this.storage.get('onlineShopUserId')}).subscribe(res => {
       this.sales = res.sales;
+      this.display=true;
     });
   }
 

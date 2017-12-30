@@ -46,7 +46,6 @@ module.exports.handelUser = {
                             if (isMatch) {
                                 res.json({data:"signin",id:users._id})
                             } else {
-                                console.log({data:"password "})
                                 res.json({data:"password not matched"})
                             }
                         });
@@ -150,7 +149,6 @@ module.exports.handelItem = {
                 User.findOne({_id:item.userId})
                     .then(function (user) {
                         record.push({user:user});
-                        console.log(record);
                         res.json({info:record})
                     })
             } else{
@@ -176,5 +174,25 @@ module.exports.handelCart={
                         });// end create
                 }
             });
+    },
+    getCart:function (req ,res) {
+         var ids=[];
+
+         Cart.find({userId:req.body.id})
+             .select('itemId')
+             .then(function (data) {
+                 for(var i=0;i<data.length;i++)
+                     ids.push(data[i].itemId);
+                 Item.find( { _id: { $in :ids   } })
+                     .then(function (d) {
+                        res.json({cart:d})
+                     })
+             })
     }
-}
+};
+
+
+
+
+
+

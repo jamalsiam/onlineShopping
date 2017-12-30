@@ -115,4 +115,12 @@ export class DataService {
     headers.append('Content-Type', 'application/json');
     return this.http.post('/api/addtocart', record, {headers: headers}).map(res => res.json());
   }
+
+  getCart(record) {
+    let headers: Headers;
+    headers = new Headers();
+    this.createAuthorizationHeader(headers);
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('/api/getcart', record, {headers: headers}).map(res => res.json());
+  }
 }

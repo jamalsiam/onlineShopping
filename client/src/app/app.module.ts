@@ -23,6 +23,7 @@ import { AddItemComponent } from './add-item/add-item.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ItemComponent } from './item/item.component';
 import { SaleComponent } from './sale/sale.component';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { SaleComponent } from './sale/sale.component';
     AddItemComponent,
     SettingsComponent,
     ItemComponent,
-    SaleComponent
+    SaleComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
