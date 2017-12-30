@@ -9,9 +9,11 @@ import {DataService} from '../data.service';
 export class PestComponent implements OnInit {
   constructor(private service: DataService) {}
   offers: any;
+  display:boolean;
   ngOnInit() {
     this.service.getOffer().subscribe(res => {
       this.offers = res.offers;
+      this.display=true;
     });
   }
 

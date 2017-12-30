@@ -5,20 +5,21 @@
     <i class="fa fa-chevron-circle-left left" (click)="previousImage()" aria-hidden="true"></i>
     <i class="fa fa-times x" onclick="off()" aria-hidden="true"></i>
   </div>
-
 </div>
 <div class="space"></div>
-<div class="view-page">
+<div class="view-page" >
 
-  <div class="galary">
+  <img *ngIf="display!==true" class="loader" src="assets/loader.gif" alt="">
+  <div *ngIf="display==true"  class="galary">
    <div>
-      <div  *ngFor="let img of images; let i = index" class="img{{i}}"><img src="data:image/jpeg;base64,{{img.image}}" height="200" width="200" alt=""></div>
+      <div *ngFor="let img of item.images; let i = index" class="img{{i}}"><img src="data:image/jpeg;base64,{{img.image}}" height="200" width="200" alt=""></div>
 
-     <div class="imageLength" onclick="on()"><p>{{images.length}}</p></div>
+     <div class="imageLength" onclick="on()"><p>{{item.images.length}}</p></div>
     </div>
 
+
   </div>
-  <div class="info">
+  <div *ngIf="display==true" class="info">
     <p>Item Name : {{item.name}} <small class="new">{{item.new}} </small></p>
     <p>Category : {{item.category}} <small>[3 of {{item.number}} sold]</small> </p>
 
@@ -30,8 +31,8 @@
     <p>Moblie : {{user.phone}} </p>
     <p>Email  : {{user.email}} </p>
     <div class="tool">
-      <div class="tooltip">
-        <button  >
+      <div *ngIf="user._id!==id" class="tooltip">
+        <button (click)="addCart(id,item._id)" >
           <i class="fa fa-cart-plus" aria-hidden="true"></i>
         </button>
         <span class="tooltiptext">Add to cart</span>

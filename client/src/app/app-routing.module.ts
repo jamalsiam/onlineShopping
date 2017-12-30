@@ -43,6 +43,10 @@ const routes: Routes = [
     component: ProfileComponent
   },
   {
+    path: 'myprofile/view/:id',
+    component: ViewItemComponent
+  },
+  {
     path: '**' ,
     component: HomeComponent
   }

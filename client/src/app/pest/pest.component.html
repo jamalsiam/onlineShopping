@@ -8,8 +8,10 @@
 </div>
 
 <!--START item-container-->
-<div class="item-container">
-
-  <app-item *ngFor="let offer of offers" [data]="offer"> </app-item>
+<div class="item-container" >
+  <div>
+    <img *ngIf="display!==true" class="loader" src="assets/loader.gif" alt="">
+  </div>
+  <app-item  *ngFor="let offer of offers" [data]="offer"> </app-item>
 
 </div><!--END item-container-->

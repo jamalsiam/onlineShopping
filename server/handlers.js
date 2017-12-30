@@ -158,3 +158,9 @@ module.exports.handelItem = {
             })
     }
 };
+
+module.exports.handelCart={
+    addToCart:function (req ,res) {
+        console.log(req.body)
+    }
+}

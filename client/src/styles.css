@@ -21,6 +21,13 @@ body *{
   padding-bottom: 40px;
 }
 
+.loader{
+  width: 75px;
+  height: 75px;
+  display: block;
+  /* text-align: center; */
+  margin: auto;
+}
 .tool button{
   border: none;
   width: 30px;
