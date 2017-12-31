@@ -123,4 +123,12 @@ export class DataService {
     headers.append('Content-Type', 'application/json');
     return this.http.post('/api/getcart', record, {headers: headers}).map(res => res.json());
   }
+
+  deleteItem(record) {
+    let headers: Headers;
+    headers = new Headers();
+    this.createAuthorizationHeader(headers);
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('/api/deleteitem', record, {headers: headers}).map(res => res.json());
+  }
 }

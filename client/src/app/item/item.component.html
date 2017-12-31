@@ -1,6 +1,6 @@
 
 <!--START item-->
-<div class="item">
+<div class="item item{{msgDelete}}">
   <div class="item-img-container">
     <div class="new">{{data.new}}</div>
     <img src='data:image/jpeg;base64,{{data.images[0].image}}'>
@@ -9,11 +9,12 @@
     </div>
   </div>
 
-  <div>
+  <div class="info-content">
     <h3>{{data.name}}</h3>
-    <p>{{data.desc}}</p>
+    <button class="delete {{msgDelete}}" *ngIf="data.userId==id" (click)="deleteItem(data._id)">{{msgDelete}}   <img *ngIf="display==true" class="loader" src="assets/loader.gif" alt=""> </button>
+    <button class="addtocart" *ngIf="data.userId!=id" (click)="addItemToCart(data._id)"> Add To Cart</button>
   </div>
-  <div>
+  <div  class="info-content">
     <b>Price: {{data.price}}$</b>
     <b>Off: {{data.off}}%</b>
   </div>

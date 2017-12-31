@@ -41,6 +41,7 @@ app.post('/api/getsale', handlers.handelUser.getSale);
 
 app.post('/api/additem',handlers.handelItem.addItem);
 app.post('/api/getiteminfo',handlers.handelItem.getItemInfo);
+app.post('/api/deleteitem',handlers.handelItem.deleteItem);
 app.get('/api/getoffer',handlers.handelItem.getOffer);
 
 app.post('/api/addtocart',handlers.handelCart.addToCart);

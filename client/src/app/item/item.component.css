@@ -7,7 +7,58 @@
   float: left;
   border-radius: 5px;
 }
+.itemDeleted{
+  opacity: 0;
+  width: 0px!important;
+  margin: 2% 0;
+  height: 0px!important;
+  transition: all 1s ease;
+}
 
+.itemDeleted .info-content{
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.addtocart{
+  background: #0b820012;
+  border: 1px solid green;
+  border-radius: 4px;
+  color: green;
+  padding: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.addtocart:hover{
+  background: green;
+  color: white;
+}
+.Deleted{
+  background: red!important;
+  color: #fff!important;
+}
+.delete{
+  background: #ff000012;
+  border: 1px solid red;
+  border-radius: 4px;
+  color: red;
+  padding: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.delete:hover{
+  background: red;
+  color: white;
+
+}
+.loader{
+  height: 16px!important;
+  width: 16px!important;
+  position: absolute;
+  margin-top: -16px;
+  margin-left: 11px;
+
+}
  .item img{
   width: 100%;
   height: 130px;

@@ -155,6 +155,14 @@ module.exports.handelItem = {
                     res.json({info:fail})
                 }
             })
+    },
+    deleteItem:function (req,res) {
+        console.log(req.body)
+        Item.remove({ _id:req.body.itemId,userId:req.body.userId }, function (err) {
+            if (err) return handleError(err);
+           console.log("removed")
+            res.json({data:"Deleted"})
+        });
     }
 };
 
