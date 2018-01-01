@@ -9,6 +9,7 @@ import {DataService} from '../data.service';
 })
 export class ItemComponent implements OnInit {
   @Input() data: any;
+  @Input() from: string;
 
   id: any;
   msgDelete: string= 'Delete';

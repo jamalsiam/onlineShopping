@@ -108,7 +108,7 @@ module.exports.handelUser = {
 
         Item.find({userId:req.body.id, 'images.0' : { $exists:true}})
             .sort('-_id')
-            .select('userId name price off images.$')
+            .select('userId name price category off images.$')
             .then(function (data) {
                 res.json({sales:data})
             })
@@ -133,7 +133,7 @@ module.exports.handelItem = {
         Item.find({ off : { $gte : '84' }, 'images.0' : { $exists:true}})
             .limit(8)
             .sort('-off')
-            .select('userId name price off  images.$')
+            .select('userId name price off category  images.$')
             .then(function (data) {
 
             res.json({offers:data})
