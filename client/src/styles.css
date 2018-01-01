@@ -20,6 +20,9 @@ body *{
 .space{
   padding-bottom: 40px;
 }
+.convertibleBoxBig{
+  width: 40%;
+}
 
 .loader{
   width: 75px;
@@ -103,11 +106,13 @@ body *{
   margin: auto;
   margin-top: 84px;
   background: white;
-  width: 60%;
   border-radius: 4px;
 }
 
 @media screen and (max-width: 1200px) {
+  .convertibleBoxBig{
+    width: 50%;
+  }
   .item-container .item {
     width: 29%!important;
   }
@@ -121,21 +126,27 @@ body *{
 
 
 @media screen and (max-width: 600px) {
+  .convertibleBoxBig{
+    width: 80%;
+  }
   .item-container .item {
     width: 46%!important;
   }
 
-  .signup-box[_ngcontent-c3] {
+  .signup-box {
     width: 50% !important;
   }
 
 }
 
 @media screen and (max-width: 400px) {
+  .convertibleBoxBig{
+    width: 100%;
+  }
   .item-container .item {
     width: 98%!important;
   }
-  .signup-box[_ngcontent-c3] {
+  .signup-box {
     margin-top: 37px!important;
     margin-bottom: 0px!important;
     width: 100% !important;
