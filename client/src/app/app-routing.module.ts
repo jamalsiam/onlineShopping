@@ -23,6 +23,10 @@ const routes: Routes = [
     component : AboutComponent
   },
   {
+    path: 'search/:query' ,
+    component : AboutComponent
+  },
+  {
     path: 'search/view/:id',
     component: ViewItemComponent
   },

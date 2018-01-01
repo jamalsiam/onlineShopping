@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DataService} from '../data.service';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-about',
@@ -14,12 +15,23 @@ export class AboutComponent implements OnInit {
   category:string='all';
   address:string='all';
   msgSearch:string;
-  constructor(private _data: DataService ,private Service:DataService) {
+  constructor(private _data: DataService ,private Service:DataService, private route: ActivatedRoute) {
+    this.route.params.subscribe(res=>{
+      if(res.query!==undefined){
+        let query=JSON.parse(res.query)
+        console.log(query)
+        this.searchApi(query);
+        this.name=query.name;
+      }
+      else {
+        this.searchApi({});
+      }
+
+
+    })
   }
   search() {
-    this.msgSearch='';
-    this.display=true;
-    this.searchLest=[];
+
     if(this.name ==undefined || this.name==""){
       this.searchApi({});
 
@@ -41,6 +53,9 @@ export class AboutComponent implements OnInit {
 
   }
   searchApi(query){
+    this.msgSearch='';
+    this.display=true;
+    this.searchLest=[];
     this.Service.search(query)
       .subscribe(res =>{
         this.searchLest=res.search;

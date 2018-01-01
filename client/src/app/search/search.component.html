@@ -1,27 +1,26 @@
 
 <div class="search-page" >
   <div class="search-box">
-
     <div class="row">
-      <input type="text" placeholder="Search Of Room ...">
-      <button><i class="fa fa-search" aria-hidden="true"></i></button>
+      <input type="text" placeholder="Search Of Item ..." [(ngModel)]="name">
+      <button (click)="search()"><i class="fa fa-search" aria-hidden="true"></i></button>
     </div>
     <div class="row">
-      <select class="select1">
-        <option >--City--</option>
-        <option value="">Amman</option>
-        <option value="">Zarqa</option>
-        <option value="">Irbid</option>
+      <select class="select1" [(ngModel)]="address">
+        <option value="all">--All City--</option>
+        <option value="amman">Amman</option>
+        <option value="zarqa">Zarqa</option>
+        <option value="irbid">Irbid</option>
       </select>
-      <select class="select2">
-        <option>--Category--</option>
-        <option value="">Mobile</option>
-        <option value="">Laptop</option>
-        <option value="">Accessories</option>
+      <select class="select2" [(ngModel)]="category">
+        <option value="all">--All Category--</option>
+        <option value="mobile">Mobile</option>
+        <option value="laptop">Laptop</option>
+        <option value="accessories">Accessories</option>
       </select>
     </div>
-
   </div>
+
   <div class="Read-me">
     <button>Read More</button>
   </div>
