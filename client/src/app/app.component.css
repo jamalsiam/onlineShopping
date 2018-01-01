@@ -1,0 +1,19 @@
+.scroll{
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  font-size: 30px;
+  color: #000000a1;
+  cursor: pointer;
+}
+.scroll:hover{
+color: #9a96969c;
+}
+
+
+.heightScreen{
+  position: absolute;
+  width: 0px;
+  height: 100vh;
+  background: #000;
+}
