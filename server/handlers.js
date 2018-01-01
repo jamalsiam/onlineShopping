@@ -157,14 +157,47 @@ module.exports.handelItem = {
             })
     },
     deleteItem:function (req,res) {
-        console.log(req.body)
         Item.remove({ _id:req.body.itemId,userId:req.body.userId }, function (err) {
             if (err) return handleError(err);
-           console.log("removed")
             res.json({data:"Deleted"})
         });
+    },
+    searchItem:function (req,res) {
+
+       if(req.body.address===undefined){
+
+          var q= Item.find({'images.0' : { $exists:true}});
+               q.select('userId name price off category  images.$');
+               if(req.body.name)
+                   q.where('name').equals(req.body.name);
+               if(req.body.category)
+                   q.where('category').equals(req.body.category);
+               q.then(function (item) {
+                   res.json({search:item});
+                   });
+
+
+       } else {
+           User.find({address:req.body.address})
+            .select('_id')
+            .then(function (id) {
+                   var ids=[]
+                   for(var i=0;i<id.length;i++)
+                       ids.push(id[i]._id);
+                  var q= Item.find( { userId: { $in :ids},'images.0' : { $exists:true}})
+               if(req.body.category)
+                   q.where('category').equals(req.body.category);
+                q.where('name').equals(req.body.name)
+                       q.select('userId name price off category images.$')
+                       q.then(function (item) {
+                           res.json({search:item})
+
+                       })
+           })
+       }
     }
 };
+
 
 module.exports.handelCart={
     addToCart:function (req ,res) {
@@ -196,6 +229,9 @@ module.exports.handelCart={
                         res.json({cart:d})
                      })
              })
+    },
+    checkCart:function (req ,res) {
+        console.log(req.body)
     }
 };
 

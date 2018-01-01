@@ -19,8 +19,12 @@ const routes: Routes = [
   component : HomeComponent
 },
   {
-    path: 'info' ,
+    path: 'search' ,
     component : AboutComponent
+  },
+  {
+    path: 'search/view/:id',
+    component: ViewItemComponent
   },
   {
     path: 'signup' ,
@@ -46,6 +50,7 @@ const routes: Routes = [
     path: 'myprofile/view/:id',
     component: ViewItemComponent
   },
+
   {
     path: '**' ,
     component: HomeComponent

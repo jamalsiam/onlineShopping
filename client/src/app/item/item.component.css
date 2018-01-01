@@ -20,7 +20,7 @@
   transition: all .5s ease;
 }
 
-.addtocart{
+.addItem{
   background: #0b820012;
   border: 1px solid green;
   border-radius: 4px;
@@ -29,7 +29,7 @@
   margin-bottom: 10px;
   cursor: pointer;
 }
-.addtocart:hover{
+.addItem:hover{
   background: green;
   color: white;
 }

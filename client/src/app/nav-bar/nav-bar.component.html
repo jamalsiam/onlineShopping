@@ -6,7 +6,7 @@
 	<div class="content">
 		<ul>
 			<li><a routerLink="/">Home</a></li>
-      <li><a routerLink="/info"  [routerLinkActive]="['info']">Info</a></li>
+      <li><a routerLink="/search"  [routerLinkActive]="['search']">Search</a></li>
       <li><a *ngIf="!username" routerLink="/signin">SignIn</a></li>
       <li><a *ngIf="!username" routerLink="/signup">SignUp</a></li>
       <li><a *ngIf="username" routerLink="/myprofile">{{username}}</a></li>

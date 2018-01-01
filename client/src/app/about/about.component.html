@@ -1,8 +1,33 @@
-<p>
-  about works!
-</p>
-<ul >
-  <li *ngFor="let one of idea" >
-    {{one.name}}
-  </li>
-</ul>
+<div class="  slide-img">
+  <div class="search-box">
+    <div class="row">
+      <input type="text" placeholder="Search Of Item ..." [(ngModel)]="name">
+      <button (click)="search()"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </div>
+    <div class="row">
+      <select class="select1" [(ngModel)]="address">
+        <option value="all">--All City--</option>
+        <option value="amman">Amman</option>
+        <option value="zarqa">Zarqa</option>
+        <option value="irbid">Irbid</option>
+      </select>
+      <select class="select2" [(ngModel)]="category">
+        <option value="all">--All Category--</option>
+        <option value="mobile">Mobile</option>
+        <option value="laptop">Laptop</option>
+        <option value="accessories">Accessories</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<!--START item-container-->
+<div class="item-container" >
+  <div>
+    <img *ngIf="display===true" class="loader" src="assets/loader.gif" alt="">
+    <h1 class="msgResult">{{msgSearch}}</h1>
+  </div>
+
+  <app-item  *ngFor="let item of searchLest" [data]="item"> </app-item>
+
+</div><!--END item-container-->

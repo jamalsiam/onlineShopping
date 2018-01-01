@@ -131,4 +131,19 @@ export class DataService {
     headers.append('Content-Type', 'application/json');
     return this.http.post('/api/deleteitem', record, {headers: headers}).map(res => res.json());
   }
+
+  checkCart(record){
+    let headers: Headers;
+    headers = new Headers();
+    this.createAuthorizationHeader(headers);
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('/api/checkcart', record, {headers: headers}).map(res => res.json());
+  }
+  search(record){
+    let headers: Headers;
+    headers = new Headers();
+    this.createAuthorizationHeader(headers);
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('/api/search', record, {headers: headers}).map(res => res.json());
+  }
 }

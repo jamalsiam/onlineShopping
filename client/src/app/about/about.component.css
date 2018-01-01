@@ -1,0 +1,78 @@
+.slide-img{
+  background: url("./img/search_bg.961d2f128f531525ad07.jpg");
+  background-size: cover;
+  height: 260px;
+  background-position: center bottom;
+  display: flex;
+}
+
+.item-container{
+  display: table;
+}
+.search-box{
+  width: 40%;
+  background: #140f0e96;
+  margin: auto;
+  height: 150px;
+  border-radius: 5px;
+  padding: 1% 2% 0% 5%;;
+}
+
+.msgResult{
+  font-size: 15px;
+  color: #a09c9c;
+  font-weight: 100;
+}
+.row{
+  width: 90%;
+  height: 40px;
+  margin: 20px;
+}
+
+.row input{
+  height: -webkit-fill-available;
+  height: -mox-fill-available;
+  width: 80%;
+  float: left;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-color: transparent;
+
+}
+.row button{
+  width: 15%;
+  height: -webkit-fill-available;
+  float: left;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-color: transparent;
+  background: #140f0ea1;
+  color: white;
+  font-size:110% ;
+  border: 1px solid #ffffff24;
+}
+.row button:hover{
+  background: #140f0ebf;
+}
+.row button:active{
+  background: #140f0ee8;
+
+}
+.row select{
+  width: 48%;
+  float: left;
+  height: -webkit-fill-available;
+  outline: none;
+  background: #140f0ec2;
+  color: white;
+}
+.row .select1 {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+
+}
+
+.row .select2 {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}

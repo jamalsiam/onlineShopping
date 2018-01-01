@@ -9,12 +9,15 @@ import {DataService} from '../data.service';
 })
 export class ItemComponent implements OnInit {
   @Input() data: any;
+
   id: any;
   msgDelete: string= 'Delete';
   display: boolean;
-
+  addToCart:string= 'Add To Cart';
+  cartClassCtr:string='addItem';
   constructor(private storage:LocalStorageService , private service:DataService) {
     this.id =this.storage.get('onlineShopUserId');
+
   }
   deleteItem(itemId){
     if(this.msgDelete=='Delete'){
@@ -27,7 +30,16 @@ export class ItemComponent implements OnInit {
 
   }
 
+  addItemToCart(itemId){
+    this.addToCart= 'Remove From Cart';
+    this.cartClassCtr='delete';
+  }
   ngOnInit() {
   }
+  checkCart( itemId,userId){
+    this.service.checkCart({ itemId:itemId , userId:userId}).subscribe(res =>{
+    })
+  }
+
 
 }

@@ -42,10 +42,13 @@ app.post('/api/getsale', handlers.handelUser.getSale);
 app.post('/api/additem',handlers.handelItem.addItem);
 app.post('/api/getiteminfo',handlers.handelItem.getItemInfo);
 app.post('/api/deleteitem',handlers.handelItem.deleteItem);
+app.post('/api/search',handlers.handelItem.searchItem);
 app.get('/api/getoffer',handlers.handelItem.getOffer);
+
 
 app.post('/api/addtocart',handlers.handelCart.addToCart);
 app.post('/api/getcart',handlers.handelCart.getCart);
+app.post('/api/checkcart',handlers.handelCart.checkCart);
 
 app.listen(process.env.PORT || 8000);
 console.log('Running on port 8000...');

@@ -12,7 +12,7 @@
   <div class="info-content">
     <h3>{{data.name}}</h3>
     <button class="delete {{msgDelete}}" *ngIf="data.userId==id" (click)="deleteItem(data._id)">{{msgDelete}}   <img *ngIf="display==true" class="loader" src="assets/loader.gif" alt=""> </button>
-    <button class="addtocart" *ngIf="data.userId!=id" (click)="addItemToCart(data._id)"> Add To Cart</button>
+    <button class="{{cartClassCtr}}" *ngIf="data.userId!=id" (click)="addItemToCart(data._id)"> {{addToCart}} </button>
   </div>
   <div  class="info-content">
     <b>Price: {{data.price}}$</b>
