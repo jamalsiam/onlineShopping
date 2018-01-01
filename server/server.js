@@ -48,7 +48,7 @@ app.get('/api/getoffer',handlers.handelItem.getOffer);
 
 app.post('/api/addtocart',handlers.handelCart.addToCart);
 app.post('/api/getcart',handlers.handelCart.getCart);
-app.post('/api/checkcart',handlers.handelCart.checkCart);
+app.post('/api/removeitemfromcart',handlers.handelCart.removeItemFromCart);
 
 app.listen(process.env.PORT || 8000);
 console.log('Running on port 8000...');

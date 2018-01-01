@@ -54,9 +54,9 @@
 .loader{
   height: 16px!important;
   width: 16px!important;
-  position: absolute;
+  /* position: absolute; */
   margin-top: -16px;
-  margin-left: 11px;
+  /* margin-left: 11px; */;
 
 }
  .item img{

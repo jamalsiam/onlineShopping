@@ -14,8 +14,7 @@ export class ItemComponent implements OnInit {
   id: any;
   msgDelete: string= 'Delete';
   display: boolean;
-  addToCart:string= 'Add To Cart';
-  cartClassCtr:string='addItem';
+  removeToCart:string= 'Remove From Cart';
   constructor(private storage:LocalStorageService , private service:DataService) {
     this.id =this.storage.get('onlineShopUserId');
 
@@ -31,14 +30,16 @@ export class ItemComponent implements OnInit {
 
   }
 
-  addItemToCart(itemId){
-    this.addToCart= 'Remove From Cart';
-    this.cartClassCtr='delete';
+  removeItemFromCart(itemId){
+    this.removeToCart='Removing'
+    this.display=true;
+    this.removeItemFromCartApi(itemId,this.id);
   }
   ngOnInit() {
   }
-  checkCart( itemId,userId){
-    this.service.checkCart({ itemId:itemId , userId:userId}).subscribe(res =>{
+  removeItemFromCartApi( itemId,userId){
+    this.service.removeItemFromCart({ itemId:itemId , userId:userId}).subscribe(res =>{
+      this.msgDelete=res.data;
     })
   }
 

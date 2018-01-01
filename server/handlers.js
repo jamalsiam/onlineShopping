@@ -230,8 +230,11 @@ module.exports.handelCart={
                      })
              })
     },
-    checkCart:function (req ,res) {
-        console.log(req.body)
+    removeItemFromCart:function (req ,res) {
+        Cart.remove( req.body, function (err) {
+            if (err) return handleError(err);
+            res.json({data:"Deleted"})
+        });
     }
 };
 
