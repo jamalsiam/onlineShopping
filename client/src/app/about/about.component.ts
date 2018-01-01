@@ -21,7 +21,7 @@ export class AboutComponent implements OnInit {
         let query=JSON.parse(res.query)
         console.log(query)
         this.searchApi(query);
-        this.name=query.name;
+        this.searchBoxCtr(query);
       }
       else {
         this.searchApi({});
@@ -71,4 +71,18 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
+  searchBoxCtr(query: any) {
+    this.name=query.name;
+
+    if(query.category===undefined)
+      this.category='all';
+    else
+      this.category=query.category;
+
+    if(query.address===undefined)
+      this.address='all';
+    else
+      this.address=query.address;
+
+  }
 }

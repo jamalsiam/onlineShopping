@@ -39,6 +39,10 @@ const routes: Routes = [
     component: SigninComponent
   },
   {
+    path: 'search/:query/view/:id',
+    component: ViewItemComponent
+  },
+  {
     path: 'view/:id',
     component: ViewItemComponent
   },

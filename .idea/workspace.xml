@@ -4,8 +4,6 @@
     <list default="true" id="707d4992-8637-404c-a205-d5b565713534" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/client/src/app/about/about.component.ts" afterPath="$PROJECT_DIR$/client/src/app/about/about.component.ts" />
       <change beforePath="$PROJECT_DIR$/client/src/app/app-routing.module.ts" afterPath="$PROJECT_DIR$/client/src/app/app-routing.module.ts" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/search/search.component.html" afterPath="$PROJECT_DIR$/client/src/app/search/search.component.html" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/search/search.component.ts" afterPath="$PROJECT_DIR$/client/src/app/search/search.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,14 +17,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="about.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="about.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/app/about/about.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            <state relative-caret-position="333">
+              <caret line="73" column="2" lean-forward="false" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="2" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app-routing.module.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/app/app-routing.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,9 +118,9 @@
         <option value="$PROJECT_DIR$/client/src/app/about/about.component.css" />
         <option value="$PROJECT_DIR$/client/src/app/nav-bar/nav-bar.component.html" />
         <option value="$PROJECT_DIR$/client/src/app/search/search.component.html" />
-        <option value="$PROJECT_DIR$/client/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/client/src/app/search/search.component.ts" />
         <option value="$PROJECT_DIR$/client/src/app/about/about.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/app-routing.module.ts" />
       </list>
     </option>
   </component>
@@ -310,12 +318,12 @@
       <workItem from="1514701983043" duration="5167000" />
       <workItem from="1514758759042" duration="9182000" />
       <workItem from="1514769987779" duration="8934000" />
-      <workItem from="1514808252626" duration="17874000" />
+      <workItem from="1514808252626" duration="18539000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="287703000" />
+    <option name="totallyTimeSpent" value="288368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="87" y="232" width="1311" height="783" extended-state="6" />
@@ -760,14 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/app/about/about.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -788,11 +788,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/app/about/about.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        <state relative-caret-position="333">
+          <caret line="73" column="2" lean-forward="false" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="2" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
