@@ -1,25 +1,29 @@
 {
-  "name": "shopping-project",
+  "name": "test",
   "version": "0.0.1",
   "private": true,
   "engines": {
-    "node": "9.3.0"
+    "node": "5.9.1"
   },
   "dependencies": {
-    "@uirouter/angularjs": "^1.0.11",
+    "@uirouter/core": "^5.0.11",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.17.2",
-    "debug": "^2.6.1",
-    "dropbox": "^2.5.1",
-    "express": "^4.15.3",
+    "express": "^4.16.2",
     "express-session": "^1.15.3",
     "jwt-simple": "^0.5.1",
-    "mongodb": "^2.2.22",
-    "mongoose": "^4.10.4",
-    "morgan": "^1.1.1",
+    "mongoose": "^4.13.8",
     "nodemon": "^1.14.6",
     "q": "^1.4.1",
     "request": "^2.36.0",
-    "socket.io": ">= 0.9.6"
-  }
+    "url": "^0.11.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "xx",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
 }
