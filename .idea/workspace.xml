@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="707d4992-8637-404c-a205-d5b565713534" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.css" afterPath="$PROJECT_DIR$/client/src/app/app.component.css" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/data.service.ts" afterPath="$PROJECT_DIR$/client/src/app/data.service.ts" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/home/home.component.ts" afterPath="$PROJECT_DIR$/client/src/app/home/home.component.ts" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/nav-bar/nav-bar.component.css" afterPath="$PROJECT_DIR$/client/src/app/nav-bar/nav-bar.component.css" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/nav-bar/nav-bar.component.html" afterPath="$PROJECT_DIR$/client/src/app/nav-bar/nav-bar.component.html" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/nav-bar/nav-bar.component.ts" afterPath="$PROJECT_DIR$/client/src/app/nav-bar/nav-bar.component.ts" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/profile/profile.component.html" afterPath="$PROJECT_DIR$/client/src/app/profile/profile.component.html" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/search/search.component.html" afterPath="$PROJECT_DIR$/client/src/app/search/search.component.html" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/search/search.component.ts" afterPath="$PROJECT_DIR$/client/src/app/search/search.component.ts" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/signin/signin.component.html" afterPath="$PROJECT_DIR$/client/src/app/signin/signin.component.html" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/signin/signin.component.ts" afterPath="$PROJECT_DIR$/client/src/app/signin/signin.component.ts" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/signout/signout.component.ts" afterPath="$PROJECT_DIR$/client/src/app/signout/signout.component.ts" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/signup/signup.component.css" afterPath="$PROJECT_DIR$/client/src/app/signup/signup.component.css" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/signup/signup.component.html" afterPath="$PROJECT_DIR$/client/src/app/signup/signup.component.html" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/signup/signup.component.ts" afterPath="$PROJECT_DIR$/client/src/app/signup/signup.component.ts" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/view-item/view-item.component.css" afterPath="$PROJECT_DIR$/client/src/app/view-item/view-item.component.css" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/view-item/view-item.component.html" afterPath="$PROJECT_DIR$/client/src/app/view-item/view-item.component.html" />
       <change beforePath="$PROJECT_DIR$/client/src/app/view-item/view-item.component.ts" afterPath="$PROJECT_DIR$/client/src/app/view-item/view-item.component.ts" />
-      <change beforePath="$PROJECT_DIR$/client/src/styles.css" afterPath="$PROJECT_DIR$/client/src/styles.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,11 +16,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="398">
               <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="55" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view-item.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/app/view-item/view-item.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -109,7 +100,6 @@
         <option value="$PROJECT_DIR$/client/src/app/profile/profile.component.html" />
         <option value="$PROJECT_DIR$/client/src/app/nav-bar/nav-bar.component.ts" />
         <option value="$PROJECT_DIR$/client/src/styles.css" />
-        <option value="$PROJECT_DIR$/client/src/app/view-item/view-item.component.ts" />
         <option value="$PROJECT_DIR$/client/src/app/view-item/view-item.component.html" />
         <option value="$PROJECT_DIR$/client/src/app/view-item/view-item.component.css" />
         <option value="$PROJECT_DIR$/client/src/app/data.service.ts" />
@@ -117,6 +107,7 @@
         <option value="$PROJECT_DIR$/client/src/app/search/search.component.html" />
         <option value="$PROJECT_DIR$/client/src/app/search/search.component.css" />
         <option value="$PROJECT_DIR$/client/src/app/search/search.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/view-item/view-item.component.ts" />
       </list>
     </option>
   </component>
@@ -215,6 +206,14 @@
             <path>
               <item name="online shoping" type="b2602c69:ProjectViewProjectNode" />
               <item name="online shoping" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view-item" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="online shoping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="online shoping" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -308,12 +307,12 @@
       <workItem from="1514769987779" duration="8934000" />
       <workItem from="1514808252626" duration="25771000" />
       <workItem from="1514839677452" duration="13404000" />
-      <workItem from="1514890080859" duration="3643000" />
+      <workItem from="1514890080859" duration="4116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="312647000" />
+    <option name="totallyTimeSpent" value="313120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="26" y="10" width="1311" height="783" extended-state="6" />
@@ -495,13 +494,6 @@
         <state relative-caret-position="296">
           <caret line="232" column="22" lean-forward="false" selection-start-line="232" selection-start-column="22" selection-end-line="232" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="55" lean-forward="false" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -697,14 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/view-item/view-item.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="48" column="36" lean-forward="false" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/app/view-item/view-item.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
@@ -787,10 +771,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="55" lean-forward="false" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="55" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/view-item/view-item.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
           <folding />
         </state>
       </provider>

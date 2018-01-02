@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {DataService} from '../data.service';
 import {LocalStorageService} from 'angular-2-local-storage';
 
@@ -16,7 +16,10 @@ export class ViewItemComponent implements OnInit {
   currentImage: string;
   i: number=0;
   AddItem: string='Add Item To Cart';
-  constructor(private route: ActivatedRoute , private service: DataService, private storage:LocalStorageService) {
+  constructor(private route: ActivatedRoute ,
+              private service: DataService,
+              private router:Router,
+              private storage:LocalStorageService) {
 
 
     this.route.params.subscribe(res => {
@@ -44,6 +47,9 @@ export class ViewItemComponent implements OnInit {
     this.currentImage=this.item.images[this.i].image
   }
   addCart(userId ,itemId){
+   if(!this.id)
+     this.router.navigate(['signin']);
+
     this.AddItem="Adding"
     this.service.addToCart({userId:userId ,itemId:itemId}).subscribe(res =>{
       this.AddItem=res.err+res.data;
