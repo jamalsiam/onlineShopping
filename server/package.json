@@ -1,29 +1,25 @@
 {
   "name": "test",
-  "version": "0.0.1",
-  "private": true,
-  "engines": {
-    "node": "5.9.1"
-  },
-  "dependencies": {
-    "@uirouter/core": "^5.0.11",
-    "bcrypt-nodejs": "0.0.3",
-    "body-parser": "^1.17.2",
-    "express": "^4.16.2",
-    "express-session": "^1.15.3",
-    "jwt-simple": "^0.5.1",
-    "mongoose": "^4.13.8",
-    "nodemon": "^1.14.6",
-    "q": "^1.4.1",
-    "request": "^2.36.0",
-    "url": "^0.11.0"
-  },
-  "scripts": {
-    "start": "node server.js"
-  },
-  "description": "xx",
+  "version": "1.0.0",
+  "description": "test desc",
   "main": "server.js",
-  "devDependencies": {},
-  "author": "",
-  "license": "ISC"
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "//"
+  },
+  "keywords": [
+    "//"
+  ],
+  "author": "jamal",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.0.0-rc1",
+    "q": "^1.5.1"
+  }
 }
