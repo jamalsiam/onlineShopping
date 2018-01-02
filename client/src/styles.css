@@ -136,12 +136,19 @@ body *{
   .signup-box {
     width: 50% !important;
   }
+  .galary{
+    width: 100%!important;
+  }
+  .info{
+    width: 100%;
+    text-align: center;
+  }
 
 }
 
 @media screen and (max-width: 400px) {
   .convertibleBoxBig{
-    width: 100%;
+    width: 85%;
   }
   .item-container .item {
     width: 98%!important;

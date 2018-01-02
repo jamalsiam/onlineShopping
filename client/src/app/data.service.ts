@@ -23,12 +23,6 @@ export class DataService {
   }
 
 
-  getMethod() {
-    return this.http.get('/api/getmethod').map(res => res.json());
-    // this._data.getMethod().subscribe(datas =>{
-    //   console.log(datas);
-    //   this.name=datas.name;
-  }
 
   signUp(record) {
     let headers: Headers;
@@ -52,12 +46,6 @@ export class DataService {
     return this.http.post('/api/signin', record, {headers: headers}).map(res => res.json());
   }
 
-  postMethod(record) {
-    var headers = new Headers();
-    this.createAuthorizationHeader(headers);
-    headers.append('Content-Type', 'application/json');
-    return this.http.post('/api/postmethod', record, {headers: headers}).map(res => res.json())
-  }
 
   AddItem(record)  {
     let headers: Headers;

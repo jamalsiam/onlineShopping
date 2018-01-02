@@ -12,7 +12,7 @@ export class SignoutComponent implements OnInit {
   constructor(private storage: LocalStorageService , private router: Router) { }
   ngOnInit() {
     this.storage.remove('onlineShopUserId');
-    this.router.navigate(['']);
+    this.router.navigate(['signin']);
 
      location.reload();
   }

@@ -12,12 +12,19 @@
 }
 .nav .buind h2{
 	text-transform: uppercase;
-    width: fit-content;
-    margin: auto;
-  color: #ffffff;
+  width: fit-content;
+  margin: auto;
+  position: absolute;
+  bottom: 6px;
+  left: 25px;
+  color: #fff;
+  font: normal 19px Cookie,cursive;
 
 }
 
+.nav .buind h2 span{
+  color:  #5383d3;
+}
 .nav .content{
 	width: 45%;
 	display: inline-block;

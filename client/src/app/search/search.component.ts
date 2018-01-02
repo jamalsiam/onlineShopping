@@ -35,6 +35,11 @@ export class SearchComponent implements OnInit {
 
     this.router.navigate(['search/'+JSON.stringify(this.query)]);
   }
+  seeMore(){
+    location.replace("https://github.com/jamalsiam");
+
+
+  }
 
   ngOnInit() {
   }

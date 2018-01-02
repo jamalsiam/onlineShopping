@@ -1,11 +1,16 @@
 .flex{
   height: 100%;
 }
-.err{
-  color: red;
-}
-.data{
+
+.addItem{
+  background: white;
+  border: 1px solid green;
   color: green;
+  height: 25px;
+}
+.addItem:hover{
+  color: white;
+  background: #00c504c7;
 }
 .viewImage  .x{
   position: absolute;
@@ -54,8 +59,8 @@ del{
 }
 .view-page{
   min-height: 59vh;
-  display: flex;
-  flex-wrap: wrap;
+  display: table;
+  width: 100%;
 }
 .space{
   height: 10vh;
@@ -63,18 +68,19 @@ del{
 }
 .galary {
   width: 300px;
+  float: left;
+  height: 220px;
 }
 .galary > div{
   margin: auto;
-  width: 72%;
+  width: 200px;
 }
+
 .galary div div{
   height: 200px;
   width: 200px;
   box-shadow: 1px 1px 1px 2px #78757563;
   position: absolute;
-
-
 }
 .galary div .img0{
   z-index: 4;
@@ -108,4 +114,7 @@ del{
 .galary div:hover .imageLength {
   display: flex;
   cursor: pointer;
+}
+.info{
+  float: left;
 }

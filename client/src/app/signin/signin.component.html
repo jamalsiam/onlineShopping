@@ -14,7 +14,8 @@
       </div>
 
       <div class="row">
-        <button (click)="signIn()">SignIn</button>
+        <button (click)="signIn()">SignIn <img *ngIf="display==true" class="loader" src="assets/loader.gif" alt="">
+        </button>
       </div>
     <div class="row">
       <p class="error">{{msg}}</p>

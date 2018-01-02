@@ -10,7 +10,7 @@
 <div class="view-page" >
 
   <img *ngIf="display!==true" class="loader" src="assets/loader.gif" alt="">
-  <div *ngIf="display==true"  class="galary">
+  <div   *ngIf="display==true"  class="galary">
    <div>
       <div *ngFor="let img of item.images; let i = index" class="img{{i}}"><img src="data:image/jpeg;base64,{{img.image}}" height="200" width="200" alt=""></div>
 
@@ -30,16 +30,10 @@
     <p>Name  : {{user.username}} </p>
     <p>Moblie : {{user.phone}} </p>
     <p>Email  : {{user.email}} </p>
-    <div class="tool">
-      <div *ngIf="user._id!==id" class="tooltip">
-        <button (click)="addCart(id,item._id)" >
-          <i class="fa fa-cart-plus" aria-hidden="true"></i>
-        </button>
-        <span class="tooltiptext">Add to cart</span>
-      </div>
-    </div>
-    <p class="err">{{err}}</p>
-    <p class="data"> {{data}}</p>
+    <button class="addItem" (click)="addCart(id,item._id)">
+      <i class="fa fa-cart-plus" aria-hidden="true"></i>
+      {{AddItem}}
+    </button>
 </div>
 
 </div>
