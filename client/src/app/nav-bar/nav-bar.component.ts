@@ -9,13 +9,20 @@ import {DataService} from '../data.service';
 })
 export class NavBarComponent implements OnInit {
   username: string;
+  id: any;
   constructor(private storage: LocalStorageService , private service: DataService) {
-
-    this.service.getUserName({id: this.storage.get('onlineShopUserId')})
+    this.id=this.storage.get('onlineShopUserId')
+    this.service.getUserName({id: this.id})
       .subscribe(res => {
-        if (res.data === 'success') {;
+       
 
-          this.username = res.username.split(" ")[0].charAt(0).toUpperCase()+'.'+res.username.split(" ")[1].charAt(0).toUpperCase();;
+        if (res.data === 'success') {;
+          if(res.username.split(" ")[1])
+          this.username = res.username.split(" ")[0].charAt(0).toUpperCase()+'.'+res.username.split(" ")[1].charAt(0).toUpperCase();
+          else
+          this.username=res.username;
+           
+
         } else {
           this.storage.remove('onlineShopUserId');
         }

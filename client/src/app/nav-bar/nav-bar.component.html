@@ -8,9 +8,9 @@
 		<ul>
 			<li><a routerLink="/">Home</a></li>
       <li><a routerLink="/search"  [routerLinkActive]="['search']">Search</a></li>
-      <li><a *ngIf="!username" routerLink="/signin">SignIn</a></li>
-      <li><a *ngIf="!username" routerLink="/signup">SignUp</a></li>
-      <li><a *ngIf="username" routerLink="/myprofile">{{username}}</a></li>
+      <li><a *ngIf="!id" routerLink="/signin">SignIn</a></li>
+      <li><a *ngIf="!id" routerLink="/signup">SignUp</a></li>
+      <li><a *ngIf="id" routerLink="/myprofile">{{username}}</a></li>
       <li><a *ngIf="username" routerLink="/signout">(SignOut)</a></li>
 		</ul>
 	</div>
