@@ -1,6 +1,7 @@
 <!--START item-container-->
-<div class="item-container">
+<div class="item-container1">
   <img *ngIf="display!==true" src="assets/loader.gif" class="loader" alt="">
+  <p   class="err-text-item">{{err}}</p>
   <app-item *ngFor="let sale of sales" [data]="sale"> </app-item>
 
 </div><!--END item-container-->
