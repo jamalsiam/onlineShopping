@@ -20,7 +20,7 @@ export class NavBarComponent implements OnInit {
           if(res.username.split(" ")[1])
           this.username = res.username.split(" ")[0].charAt(0).toUpperCase()+'.'+res.username.split(" ")[1].charAt(0).toUpperCase();
           else
-          this.username=res.username;
+          this.username= res.username.split(" ")[0].charAt(0).toUpperCase();
            
 
         } else {
