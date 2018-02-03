@@ -23,8 +23,9 @@
     <p>Item Name : {{item.name}} <small class="new">{{item.new}} </small></p>
     <p>Category : {{item.category}} <small>[3 of {{item.number}} sold]</small> </p>
 
-      <p>Price : ${{item.price}}  <del>${{parseInt((item.price * (item.off/10)) + item.price)}}</del>  </p>
-    <p>Item location: {{user.address}} </p>
+      <p>Price : ${{item.price}}  <del>${{parseInt(item.price , item.off/10,  item.price)}}</del>  </p>
+      
+      <p>Item location: {{user.address}} </p>
 
     <h3>Seller Info</h3>
     <p>Name  : {{user.username}} </p>

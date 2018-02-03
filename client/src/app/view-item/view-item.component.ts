@@ -55,8 +55,12 @@ export class ViewItemComponent implements OnInit {
       this.AddItem=res.err+res.data;
     });
   }
-  parseInt(num: string){
-    return parseInt( num );
+  parseInt(num1: string,num2: string,num3: string){
+    let numa=  parseInt(  num1);
+    let numb=  parseInt(  num2)
+    let numc=  parseInt(  num3)
+
+    return (numa*numb)+numc;
   }
   ngOnInit() {
     this.display=false;
