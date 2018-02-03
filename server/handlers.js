@@ -128,6 +128,9 @@ module.exports.handelItem = {
             price: item.price,
             off: item.off
         })
+        .then(function(data){
+            res.json({data:'success'})
+        })
     },
     getOffer:function (req,res) {
         Item.find({ off : { $gte : '84' }, 'images.0' : { $exists:true}})

@@ -28,7 +28,11 @@ export class AddItemComponent implements OnInit {
                           price: this.itemPrice,
                           off: this.itemOff})
    .subscribe ( res => {
+    if (res.data === 'success') {
+      location.reload();
+    }
    });
+ 
   }
 
   handleFileSelect(evt) {

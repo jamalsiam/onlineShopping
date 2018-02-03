@@ -51,18 +51,22 @@
 }
 
 .publish{
-  background: #0000000f;;
-  width: 50%;
-  height: 45px!important;
+  background: #5383d3;
+    margin: auto;
+    display: block;
+    height: 30px;
+    width: 120px;
+    color: #fff;
+    border: none;
 }
 
 .publish:hover{
-  background: #00000070;
+  background: #4974bb;
   color: ghostwhite;
 
 
 }
 .publish:active{
-  background: black;
+  background: #4771b7;
   color: white
 }
