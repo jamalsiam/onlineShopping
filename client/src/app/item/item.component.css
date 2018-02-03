@@ -5,6 +5,7 @@
   width: 20.7%;;
   margin: 2%;
   float: left;
+  max-height: 238px;
   border-radius: 5px;
 }
 .itemDeleted{
